@@ -1,0 +1,142 @@
+/* RESET */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/* ------------------- HEADER ------------------- */
+
+.header-cnt {
+    height: 100vh;
+}
+
+.header-bg {
+    background-image: url(../imgs/bgclothesblur.jpg);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+.header-title h1 {
+    font-size: 0;
+    padding-top: 20vh;
+}
+.header-title img {
+    width: 400px;
+}
+.header-title h2 {
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    margin-top: -5vh;
+    font-size: 24px;
+}
+.title-description {
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    display: flex;
+    width: 50%;
+    justify-content:space-around;
+}
+.scroll-cnt {
+
+}
+.mouse-cnt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.mouse-icon {
+    width: 25px;
+    height: 41px;
+    border: 1px white solid;
+    border-radius: 25px;
+}
+.mousewheel {
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    background: white;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-top:8px;
+
+}
+
+@-webkit-keyframes mousewheel {
+    25% {margin-top: 15px; opacity: 0;}
+    50% {margin-top: 7px; opacity: 0;}
+
+}
+@keyframes mousewheel {
+    25% {margin-top: 15px; opacity: 0;}
+    50% {margin-top: 7px; opacity: 0;}
+
+}
+.scroll-arrows {
+    display: flex;
+    justify-content: center;
+}
+.scroll-arrows img {
+    position: fixed;
+    bottom: 10px;
+    width: 22px;
+    opacity: 0;
+    animation: arrowfade1 2s ease infinite;
+}
+.scroll-arrows img:nth-child(1) {
+    padding-bottom: 16px;
+}
+.scroll-arrows img:nth-child(2) {
+    padding-bottom: 8px;
+    animation-delay: .2s;
+}
+.scroll-arrows img:nth-child(3) {
+    animation-delay: .4s;
+}
+@-webkit-keyframes arrowfade1 {
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+/* ------------------- MAIN ------------------- */
+
+#main {
+    position: absolute;
+    z-index: 2;
+    background: whitesmoke;
+    width: 100%;
+    height: 100vh;
+}
+
