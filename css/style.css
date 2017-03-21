@@ -1015,7 +1015,7 @@ select[name="title-drpdwn"]:focus {
 
 @media screen and (max-width: 650px) {
     .header-title {
-        padding-top: 10vh;
+        padding-top: 11vh;
     }
     .title-logo img {
         width: 285px;
@@ -1046,7 +1046,7 @@ select[name="title-drpdwn"]:focus {
 
 
     .skew-cnt {
-        margin-top: 17em;
+        margin-top: 20em;
     }
 
 
@@ -1072,7 +1072,7 @@ select[name="title-drpdwn"]:focus {
 
     }
     .article-item:not(.first) {
-        margin-top: 135px;
+        margin-top: 185px;
     }
     .img-list-item {
         flex-basis: 100%;
