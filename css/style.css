@@ -13,18 +13,11 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 
 }
-/* FONTS */
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon/fonts/icomoon.eot');
-    url('../fonts/icomoon/fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon/fonts/icomoon.ttf')  format('truetype'),
-    url('../fonts/icomoon/fonts/icomoon.svg#svgFontName') format('svg');
-}
 
 
-/* -------- UNIVERSAL / MENU & WRAPPER -------- */
+/*-------------------------------------
+------ UNIVERSAL / MENU & WRAPPER -----
+-------------------------------------*/
 
 .visually-hidden {
     display: none;
@@ -112,17 +105,13 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 3;
 }
 
-/* ------- MOBILE MENU ------- */
+/* ----------------------------------
+------------ MOBILE MENU ------------
+-----------------------------------*/
 
-.burger-ico {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .mobile-nav {
     display: none;
+    position: relative;
 }
 
 .nav-list-mobile {
@@ -168,13 +157,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* test burger icon animation */
 
+/* ----- BURGER MENU STYLING ---- */
+
+.burger-ico {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #nav-icon3 {
     width: 30px;
     height: 25px;
-    position: absolute;
-    top: 3.2vh;
+    align-self: center;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -191,7 +187,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 3.5px;
     width: 100%;
     background: black;
-
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -243,7 +238,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ------------------- HOME / HEADER ------------------- */
+/* ----------------------------------
+------------ HOME HEADER ------------
+-----------------------------------*/
 
 .header-home {
     height: 100vh;
@@ -337,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .arrow-cnt {
-   align-self: center;
+    align-self: center;
 
 }
 .arrow-cnt img {
@@ -361,7 +358,9 @@ h1, h2, h3, h4, h5, h6 {
     100% {opacity: 0;}
 }
 
-/* ------------------- CLOTHES / HEADER ------------------- */
+/* ----------------------------------
+----------- CLOTHES HEADER ----------
+-----------------------------------*/
 
 .parallax-clothes {
     background-image: url(../imgs/clothesimgs/clothesheader_blr.jpeg);
@@ -390,9 +389,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-/* ------------------- COLLECTIONS / HEADER ------------------- */
+/* ----------------------------------
+--------- COLLECTIONS HEADER --------
+-----------------------------------*/
 
 .parallax-collections {
     background-image: url(../imgs/collections/collectionsheader.jpeg);
@@ -407,20 +406,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/* ------------------------- MAIN ---------------------- */
+/* --------------------------------------
+---------------- MAIN -------------------
+---------------------------------------*/
 
-/* -------------- HOME / MAIN -------------- */
+/* ----------- MAIN / HOME ----------- */
 
 
 #main {
     position: absolute;
-    z-index: 2;
+    /* z-index: 2; */
     background: white;
     width: 100%;
 }
 
 .home-menu {
-    display: none; /* for JQuery fadeIn() */
+    display: none;
 }
 
 
@@ -459,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 450px;
 }
 
-/* SKEWED CNT */
+/* ---- CSS for skewed sections---- */
 .skew-cnt-home {
     height: 150px;
     width: 100%;
@@ -481,11 +482,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: skewY(-5deg);
 }
 
-
-
-/* ----------- HOME / NEWSLETTER SECTION  ------- */
+/* --------- HOME __ NEWSLETTER ------- */
 .newsletter {
-    width: 100%;
     padding-bottom: 200px;
     background: linear-gradient(135deg, #E8E8E8 0%, #E7E7F3 100%);
 }
@@ -493,7 +491,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 15%;
 }
 .newsletter-title {
-    width: 100%;
     text-align: center;
 }
 .newsletter-title h2 {
@@ -502,24 +499,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px;
 }
 .newsletter-form {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: 'Raleway';
 }
-.radio-title {
+.radiobtn-cnt {
     width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     margin-top: 85px;
 }
-.male, .female, .other {
-    display: flex;
-    align-items: center;
-}
+
 .txtfield {
     width: 50%;
     margin: 0 auto;
@@ -562,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ------------ MAIN CLOTHES ------------ */
+/* ------------ MAIN / CLOTHES ------------ */
 .skew-cnt {
     height: 185px;
     width: 100%;
@@ -602,8 +593,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-
+/* CSS FOR CLOTHES & COLLECTIONS ARTICLES */
 .article-cnt {
     padding-bottom: 75px;
 }
@@ -701,7 +691,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ------------ MAIN COLLECTION ----------- */
+/* ------------ MAIN COLLECTION -----------
+ (few extra adjustments to the articles) */
 
 
 .collection-gallery {
@@ -732,13 +723,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*-----*/
 
 
-
-/* ------------- FOOTER --------------- */
+/* ------------- UNIVERSAL FOOTER --------------- */
 .footer {
-    background: white;
 }
 .footer-clothes {
     background: #FAFAFA;
@@ -747,11 +735,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer-cnt {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 150px;
     font-family: 'Raleway';
-    font-size: 14px;
-
 }
 .footer-cnt a {
     text-decoration: none;
@@ -759,8 +744,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: column;
+     display: flex;
+     flex-direction: column;
     flex-basis: 25%;
 }
 .social-icons {
@@ -769,8 +754,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
-
 }
 .social-icons li:not(:nth-child(3)) {
     margin-right: 40px;
@@ -788,15 +771,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer-center {
     flex-basis: 75%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-flow: column;
+    flex-direction: column;
     font-size: 14px;
 }
 .footer-center img {
     width: 175px;
 }
-
 
 
 .footer-right {
@@ -813,8 +794,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer-map, .footer-mail {
     display: flex;
     align-self: flex-end;
-    align-items: center;
-    position: relative;
     align-items: center;
     transition: all .2s ease;
 }
@@ -833,7 +812,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* MEDIA QUERIES */
+/*-------------------------------------
+----------- MEDIA QUERIES -------------
+-------------------------------------*/
 
 @media screen and (max-width: 1050px) {
     .site-title {
@@ -954,7 +935,7 @@ h1, h2, h3, h4, h5, h6 {
         text-shadow: 1px 1px 6px rgba(0,0,0,0.55);
     }
 
-    .radio-title {
+    .radiobtn-cnt {
         width: 75%;
     }
     .txtfield {
@@ -984,6 +965,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .footer-left {
         align-items: center;
+        border-bottom: 1px #A5A8E0 solid;
+
     }
     .social-icons {
         margin-top: 15px;
@@ -991,12 +974,15 @@ h1, h2, h3, h4, h5, h6 {
     .footer-center {
         order: 3;
         flex-basis: 25%;
+        justify-content: center;
+        border-bottom: 1px #A5A8E0 solid;
     }
     .footer-center img {
         display: none;
     }
     .footer-right {
         justify-content:center;
+        border-bottom: 1px #A5A8E0 solid;
     }
     .footer-map {
         align-self: center;
@@ -1014,18 +1000,20 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 650px) {
 
     .title-logo img {
-        width: 250px;
+        width: 285px;
     }
     .title-logo h2 {
         font-size: 1.2rem;
-        margin-top: -3.5vh;
+        margin-top: -3vh;
     }
     .title-description {
         width: 90%;
         font-size: 0.65rem;
+        flex-direction: column;
     }
     .title-description span {
-        margin-top: 15px;
+        margin-top: 25px;
+        font-size: 0.9rem;
     }
 
 
