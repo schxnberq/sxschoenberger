@@ -114,21 +114,32 @@
                         <div class="newsletter-title">
                             <h2>Sign up for my newsletter to stay up to date!</h2>
                         </div>
-                        <form class="newsletter-form" action="?" method="post">
+                        <form id="newsletter" class="newsletter-form" action="?" method="post">
                             <div class="radiobtn-cnt">
-                                <div class="male">
-                                    <label for="mr">Mr.</label>
-                                    <input type="radio" id="mr" value="Mr." name="gender">
+                                <span>Gender:</span>
+                                <div class="radios">
+                                    <div class="male">
+                                        <label for="mr">Mr.</label>
+                                        <input type="radio" id="mr" value="Mr." name="gender">
+                                    </div>
+                                    <div class="female">
+                                        <label for="mrs">Mrs.</label>
+                                        <input type="radio" id="mrs" value="Mrs." name="gender">
+                                    </div>
+                                    <div class="other">
+                                        <label for="other">Other</label>
+                                        <input type="radio" id="other" value="Other" name="gender">
+                                    </div>
                                 </div>
-                                <div class="female">
-                                    <label for="mrs">Mrs.</label>
-                                    <input type="radio" id="mrs" value="Mrs." name="gender">
-                                </div>
-                                <div class="other">
-                                    <label for="other">Other</label>
-                                    <input type="radio" id="other" value="Other" name="gender">
-                                </div>
-
+                            </div>
+                            <div class="title txtfield">
+                                <span>Title:</span>
+                                <select name="title-drpdwn" form="newsletter">
+                                    <option value="choose">Choose Title:</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Dipl. Ing.">Dipl. Ing.</option>
+                                    <option value="Mag.">Mag.</option>
+                                </select>
                             </div>
                             <div class="name txtfield">
                                 <label for="name">Name:</label>

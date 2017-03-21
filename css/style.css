@@ -507,10 +507,26 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 85px;
 }
-
+.radios {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+select[name="title-drpdwn"] {
+    background: white;
+    border-radius: 0;
+    border: none;
+    height: 25px;
+    font-family: 'Raleway';
+    width: 100px;
+    padding-left: 5px;
+}
+select[name="title-drpdwn"]:focus {
+    outline: none;
+}
 .txtfield {
     width: 50%;
     margin: 0 auto;
