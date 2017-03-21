@@ -999,7 +999,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 650px) {
     .header-title {
-        padding-top: 12vh;
+        padding-top: 10vh;
     }
     .title-logo img {
         width: 285px;
@@ -1012,6 +1012,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 90%;
         font-size: 0.65rem;
         flex-direction: column;
+
     }
     .title-description span {
         margin-top: 25px;
