@@ -876,6 +876,9 @@ select[name="title-drpdwn"]:focus {
     .newsletter {
         font-size: 0.85rem;
     }
+    .radiobtn-cnt {
+        width: 65%;
+    }
     .txtfield {
         width: 65%;
     }
@@ -953,6 +956,9 @@ select[name="title-drpdwn"]:focus {
 
     .radiobtn-cnt {
         width: 75%;
+    }
+    .radiobtn-cnt {
+        width: 80%;
     }
     .txtfield {
         width: 80%;
@@ -1058,6 +1064,9 @@ select[name="title-drpdwn"]:focus {
     }
     .newsletter {
         font-size: 0.75rem;
+    }
+    .radiobtn-cnt {
+        width: 100%;
     }
     .txtfield {
         width: 100%;
