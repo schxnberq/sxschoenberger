@@ -7,26 +7,33 @@
         <title>Stefanie Schoenberger - Fashion Designer</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
         <link rel="icon" href="imgs/favico.png">
     </head>
 
     <body>
         <header class="header-home" id="header">
                 <div class="parallax-home"></div>
+
                 <section class="header-title">
-                    <h1>Stefanie Schoenberger - Fashion Designer, Artist, Creative Mind, Dressmaker
-                        <img src="imgs/sxschoenb_signed.png" alt="stefanie schoenberger logo">
-                    </h1>
-                    <h2>Stefanie</h2>
+
+                    <div class="title-logo">
+                        <h1>Stefanie Schoenberger - Fashion Designer, Artist, Creative Mind, Dressmaker
+                            <img src="imgs/sxschoenb_signed.png" alt="stefanie schoenberger logo">
+                        </h1>
+                        <h2>Stefanie</h2>
+                    </div>
+
                     <div class="title-description">
                         <span>Fashion Designer</span>
                         <span>Artist</span>
                         <span>Creative Mind</span>
                         <span>Dressmaker</span>
                     </div>
+
                 </section>
                 <div class="scroll-cnt">
                     <div class="mouse-cnt">
@@ -36,10 +43,10 @@
                             </div>
                         </a>
                     </div>
-                    <div class="scroll-arrows">
-                        <img src="imgs/scroll-arrows.png" alt="arrow-icon-one">
-                        <img src="imgs/scroll-arrows.png" alt="arrow-icon-two">
-                        <img src="imgs/scroll-arrows.png" alt="arrow-icon-three">
+                    <div class="arrow-cnt">
+                        <img src="imgs/scroll-arrows.png" alt="arrow-icon one">
+                        <img src="imgs/scroll-arrows.png" alt="arrow-icon two">
+                        <img src="imgs/scroll-arrows.png" alt="arrow-icon three">
                     </div>
                 </div>
 
@@ -50,45 +57,65 @@
                     <h2 class="visually-hidden">Main Content</h2>
                         <section class="menu home-menu">
                             <h2 class="visually-hidden">Main Navigation</h2>
-                            <nav class="navigation wrapper">
+                            <nav class="main-nav desktop-nav wrapper">
                                 <div class="logo-cnt">
                                     <a href="index.html">
                                         <img class="menu-logo" src="imgs/sxschoenb_signed-b.png" alt="schoenberger logo">
                                     </a>
                                 </div>
-                                <ul class="main-nav">
+                                <ul class="nav-list">
                                     <li><a href="about.html">about</a></li>
                                     <li><a href="collections.html">collections</a></li>
                                     <li><a href="clothes.html">clothes</a></li>
                                     <li><a href="contact.html">contact</a></li>
                                 </ul>
                             </nav>
+
+                            <nav class="main-nav mobile-nav">
+                                <div class="burger-ico">
+                                    <!--<span class="icon-menu"></span>-->
+                                    <div id="nav-icon3">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <ul class="nav-list-mobile">
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="collections.html">collections</a></li>
+                                    <li><a href="clothes.html">clothes</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                    <li class="mobile-logo"><a href="index.html"><img src="imgs/sxschoenb_signed-b.png" alt="schoenberger logo-mobile"></a></li>
+                                </ul>
+                            </nav>
                         </section>
+
                         <article class="welcome-cnt">
-                            <div class="welcome__title">
+                            <div class="welcome-title">
                                 <h2>hello people</h2>
                             </div>
-                            <section class="welcome__content">
+                            <section class="welcome-content">
                                 <h2 class="visually-hidden">About Stefanie Schoenberger</h2>
-                                <div class="welcome__txt">
+                                <div class="welcome-txt">
                                     <p>
                                         My name is Stefanie Schönberger. I am nineteen years old. Graduated from Fashion School in 2016, Graz. At the moment working with an amazing designer and dressmaker in Graz – Darja Fahrenbruch. It is all about spreading my artwork into the world and getting to know exciting people. I wanted to be a fashion designer since I am nine years old. For now, I would like to gain as much experience in any sector of the fashion industry as I can. Actually I am looking for an internship abroad and so this website is also used as my personal, digital PORTFOLIO.
                                     </p>
                                 </div>
-                                <div class="welcome__img">
+                                <div class="welcome-img">
                                     <img src="imgs/facelogo.png" alt="portrait-image">
                                 </div>
                             </section>
                         </article>
                 </section>
-                <div class="skew-cnt"></div>
+                <div class="skew-cnt-home"></div>
                 <section class="newsletter">
                     <h2 class="visually-hidden">Newsletter</h2>
-                    <div class="newsletter__cnt wrapper">
-                        <div class="newsletter__title">
+                    <div class="newsletter-cnt wrapper">
+                        <div class="newsletter-title">
                             <h2>Sign up for my newsletter to stay up to date!</h2>
                         </div>
-                        <form class="newsletter__form" action="?" method="post">
+                        <form class="newsletter-form" action="?" method="post">
                             <div class="title">
                                 <div class="male">
                                     <label for="mr">Mr.</label>
@@ -127,7 +154,7 @@
                 <footer class="footer">
                     <section class="footer-cnt wrapper">
                         <h2 class="visually-hidden">Footer Content</h2>
-                        <section class="footer__left">
+                        <div class="footer-left">
                             <h2 class="visually-hidden">Social Media</h2>
                             <div class="left-title">
                                 <span>Social Media</span>
@@ -135,43 +162,45 @@
                             <ul class="social-icons">
                                 <li>
                                     <a target="_blank" href="https://facebook.com">
-                                        <img src="imgs/footer-icons/facebook.png" alt="facebook-icon">
+                                        <span class="icon-behance icon"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" href="https://instagram.com/sxschoenberger">
-                                        <img src="imgs/footer-icons/instagram.png" alt="instagram-icon">
+                                        <span class="icon-instagram icon"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" href="https://twitter.com">
-                                        <img src="imgs/footer-icons/twitter.png" alt="twitter-icon">
+                                        <span class="icon-twitter icon"></span>
                                     </a>
                                 </li>
                             </ul>
-                        </section>
-                        <section class="footer__center">
+                        </div>
+                        <div class="footer-center">
                             <h2 class="visually-hidden">Logo, Company & Copyright Information</h2>
                             <img src="imgs/sxschoenb_signed-b.png" alt="schoenberger-logo footer">
-                            <span>Impressum</span>
-                            <span>© 2017 Stefanie Schoenberger</span>
-                        </section>
-                        <section class="footer__right">
+                            <a href=""><span>Impressum</span></a>
+                            <a href=""><span>© 2017 Stefanie Schoenberger</span></a>
+                        </div>
+                        <div class="footer-right">
                             <h2 class="visually-hidden">Business location and E-Mail address</h2>
                             <div class="footer-map">
-                                <a href="https://goo.gl/maps/93R68SUdAZr">
-                                    <img class="map-img" src="imgs/footer-icons/mapicon.png" alt="map-icon">
+                                <a class="icon-location icon" href="https://goo.gl/maps/pMHhwG1XMLN2">
                                 </a>
-                                <a target="_blank" href="https://goo.gl/maps/93R68SUdAZr">Graz, Austria</a>
+                                <a href="https://goo.gl/maps/pMHhwG1XMLN2">
+                                    <span>Graz, Austria</span>
+                                </a>
                             </div>
                             <div class="footer-mail">
-                                <a href="mailto:web@sxschoenberger.com">
-                                    <img class="mail-img" src="imgs/footer-icons/mailicon.png" alt="mail-icon">
+                                <a class="icon-envelope-o icon" href="mailto:web@sxschoenberger.com">
                                 </a>
-                                <a href="mailto:web@sxschoenberger.com">web@sxschoenberger.com</a>
+                                <a href="mailto:web@sxschoenberger.com">
+                                    <span>web@sxschoenberger.com</span>
+                                </a>
                             </div>
 
-                        </section>
+                        </div>
                     </section>
 
                 </footer>
