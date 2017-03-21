@@ -27,11 +27,16 @@
 
 
     $(document).ready(function(){
-        $('#nav-icon3').click(function(){
-            $('#nav-icon3').toggleClass('open');
+        var $burgerico = $('#nav-icon3');
+        $burgerico.click(function(){
+            $burgerico.toggleClass('open');
             $('.nav-list-mobile').slideToggle(250);
         });
     });
+
+
+
+
 
 
 
