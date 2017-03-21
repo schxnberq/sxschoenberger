@@ -1015,7 +1015,7 @@ select[name="title-drpdwn"]:focus {
 
 @media screen and (max-width: 650px) {
     .header-title {
-        padding-top: 11vh;
+        padding-top: 10vh;
     }
     .title-logo img {
         width: 285px;
@@ -1046,7 +1046,7 @@ select[name="title-drpdwn"]:focus {
 
 
     .skew-cnt {
-        margin-top: 20em;
+        margin-top: 17em;
     }
 
 
