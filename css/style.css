@@ -1066,9 +1066,11 @@ select[name="title-drpdwn"]:focus {
         font-size: 0.7rem;
     }
 
-
+    .article-img-cnt {
+        flex-basis: 100%;
+    }
     .article-item {
-        flex-direction: column;
+        display: block;
 
     }
     .article-item:not(.first) {
