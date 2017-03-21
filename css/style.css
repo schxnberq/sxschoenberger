@@ -262,10 +262,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     text-align: center;
     position: fixed;
+    padding-top: 20vh;
 }
 .title-logo h1 {
     font-size: 0;
-    padding-top: 20vh;
 }
 .title-logo img {
     width: 400px;
@@ -998,7 +998,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (max-width: 650px) {
-
+    .header-title {
+        padding-top: 12vh;
+    }
     .title-logo img {
         width: 285px;
     }
