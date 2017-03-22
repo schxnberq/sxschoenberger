@@ -362,8 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 ----------- CLOTHES HEADER ----------
 -----------------------------------*/
 
-.parallax-clothes {
-    background-image: url(../imgs/clothesimgs/clothesheader_blr.jpeg);
+.parallax {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -372,7 +371,9 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-
+}
+.clothes-hero {
+    background-image: url(../imgs/clothesimgs/clothesheader_blr.jpeg);
 }
 
 .site-title {
@@ -393,17 +394,8 @@ h1, h2, h3, h4, h5, h6 {
 --------- COLLECTIONS HEADER --------
 -----------------------------------*/
 
-.parallax-collections {
+.collection-hero {
     background-image: url(../imgs/collections/collectionsheader.jpeg);
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-
 }
 
 /* --------------------------------------
@@ -424,9 +416,11 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-
+.section-1 {
+    margin-top: 10em;
+}
 .welcome-cnt {
-    margin-top: 165px;
+
     z-index: 3;
 }
 .welcome-title {
@@ -832,6 +826,12 @@ select[name="title-drpdwn"]:focus {
 /*-------------------------------------
 ----------- MEDIA QUERIES -------------
 -------------------------------------*/
+
+@media screen and (max-width: 1500px) {
+
+}
+
+
 
 @media screen and (max-width: 1050px) {
     .site-title {
