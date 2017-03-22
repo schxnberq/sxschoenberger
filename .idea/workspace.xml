@@ -4,7 +4,6 @@
     <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,8 +67,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="822" column="1" lean-forward="true" selection-start-line="822" selection-start-column="1" selection-end-line="822" selection-end-column="1" />
+                <state relative-caret-position="456">
+                  <caret line="873" column="25" lean-forward="false" selection-start-line="873" selection-start-column="25" selection-end-line="873" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -302,7 +301,7 @@
       <workItem from="1489962654134" duration="2393000" />
       <workItem from="1490009180493" duration="37198000" />
       <workItem from="1490094152750" duration="28806000" />
-      <workItem from="1490183873495" duration="3642000" />
+      <workItem from="1490183873495" duration="3839000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -416,11 +415,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490184524885</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lost count -m">
+      <created>1490187563113</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1490187563113</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119717000" />
+    <option name="totallyTimeSpent" value="119914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="833" extended-state="6" />
@@ -460,7 +466,8 @@
     <MESSAGE value="frth commit - responsive adj." />
     <MESSAGE value="fifth -m" />
     <MESSAGE value="sixth -m" />
-    <option name="LAST_COMMIT_MESSAGE" value="sixth -m" />
+    <MESSAGE value="lost count -m" />
+    <option name="LAST_COMMIT_MESSAGE" value="lost count -m" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -830,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="822" column="1" lean-forward="true" selection-start-line="822" selection-start-column="1" selection-end-line="822" selection-end-column="1" />
+        <state relative-caret-position="456">
+          <caret line="873" column="25" lean-forward="false" selection-start-line="873" selection-start-column="25" selection-end-line="873" selection-end-column="25" />
           <folding />
         </state>
       </provider>

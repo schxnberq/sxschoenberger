@@ -855,19 +855,24 @@ select[name="title-drpdwn"]:focus {
         margin-top: 12em;
     }
     .welcome-title h2 {
-        font-size: 3.5em;
+        font-size: 2.65em;
     }
     .welcome-txt {
         max-width: 1000px;
     }
     .welcome-txt p {
-        font-size: 1.4em;
-        line-height: 1.6em;
+        font-size: 1.3em;
+        line-height: 1.55em;
+    }
+    .welcome-img img {
+        width: 550px;
     }
     .skew-cnt-home {
         height: 175px;
     }
-
+    .newsletter-title h2 {
+        font-size: 1.25em;
+    }
     .newsletter {
         font-size: 1.1em;
     }
