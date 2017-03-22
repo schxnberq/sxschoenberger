@@ -855,7 +855,7 @@ select[name="title-drpdwn"]:focus {
         margin-top: 12em;
     }
     .welcome-title h2 {
-        font-size: 2.65em;
+        font-size: 2.8em;
     }
     .welcome-txt {
         max-width: 1000px;
@@ -865,7 +865,7 @@ select[name="title-drpdwn"]:focus {
         line-height: 1.55em;
     }
     .welcome-img img {
-        width: 550px;
+        width: 485px;
     }
     .skew-cnt-home {
         height: 175px;

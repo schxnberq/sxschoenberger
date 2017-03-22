@@ -67,8 +67,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="873" column="25" lean-forward="false" selection-start-line="873" selection-start-column="25" selection-end-line="873" selection-end-column="25" />
+                <state relative-caret-position="152">
+                  <caret line="857" column="22" lean-forward="false" selection-start-line="857" selection-start-column="22" selection-end-line="857" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -301,7 +301,7 @@
       <workItem from="1489962654134" duration="2393000" />
       <workItem from="1490009180493" duration="37198000" />
       <workItem from="1490094152750" duration="28806000" />
-      <workItem from="1490183873495" duration="3839000" />
+      <workItem from="1490183873495" duration="3905000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -422,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490187563113</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="lost count -m">
+      <created>1490187753449</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1490187753449</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119914000" />
+    <option name="totallyTimeSpent" value="119980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="833" extended-state="6" />
@@ -837,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="873" column="25" lean-forward="false" selection-start-line="873" selection-start-column="25" selection-end-line="873" selection-end-column="25" />
+        <state relative-caret-position="152">
+          <caret line="857" column="22" lean-forward="false" selection-start-line="857" selection-start-column="22" selection-end-line="857" selection-end-column="22" />
           <folding />
         </state>
       </provider>
