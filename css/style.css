@@ -42,9 +42,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 10vh;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
-.logo-cnt {
+.menu-logo-cnt {
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -60,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0 auto;
     list-style-type: none;
     font-family: 'Raleway';
     text-transform: uppercase;
@@ -264,21 +264,21 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     padding-top: 20vh;
 }
-.title-logo h1 {
+.header-logo h1 {
     font-size: 0;
 }
-.title-logo img {
-    width: 400px;
+.header-logo img {
+    width: 475px;
 }
-.title-logo h2 {
+.header-logo h2 {
     font-family: 'Raleway';
     font-weight: 200;
     font-style: italic;
     color: white;
-    margin-top: -5vh;
+    margin-top: -5.5vh;
     font-size: 24px;
 }
-.title-description {
+.header-description {
     margin: 0 auto;
     margin-top: 50px;
     font-family: 'Raleway';
@@ -286,8 +286,11 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     color: white;
     display: flex;
-    width: 50%;
+    width: 55%;
     justify-content:space-around;
+}
+.header-description span {
+    font-size: 1.25rem;
 }
 
 .scroll-cnt {
@@ -827,28 +830,114 @@ select[name="title-drpdwn"]:focus {
 ----------- MEDIA QUERIES -------------
 -------------------------------------*/
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
+    .header-logo img {
+        width: 600px;
+    }
+    .header-logo h2 {
+        margin-top: -6.5vh;
+    }
+    .header-description {
+        width: 60%;
+    }
+    .header-description span {
+        font-size: 1.6em;
+        margin-top: 65px;
+    }
+    .menu-logo {
+        width: 185px;
+    }
+
+    .nav-list a {
+        font-size: 1.25em;
+    }
+    .welcome-cnt {
+        margin-top: 12em;
+    }
+    .welcome-title h2 {
+        font-size: 3.5em;
+    }
+    .welcome-txt {
+        max-width: 1000px;
+    }
+    .welcome-txt p {
+        font-size: 1.4em;
+        line-height: 1.6em;
+    }
+    .skew-cnt-home {
+        height: 175px;
+    }
+
+    .newsletter {
+        font-size: 1.1em;
+    }
+    .radiobtn-cnt {
+        width: 65%;
+    }
+    .txtfield {
+        width: 65%;
+    }
+    .form-btn {
+        width: 175px;
+        font-size: 0.8em;
+    }
+
+
+    .article-txt p {
+        font-size: 1.35em;
+        line-height: 1.5em;
+    }
+
+
+
+
+    .footer span {
+        font-size: 1.1em;
+    }
 
 }
+
+/*
+
+@media screen and (max-width: 1500px) {
+    .header-logo img {
+        width: 500px;
+    }
+    .header-logo h2 {
+        margin-top: -6.5vh;
+    }
+    .header-description {
+        width: 60%;
+    }
+    .header-description span {
+        font-size: 1.2rem;
+    }
+}
+*/
 
 
 
 @media screen and (max-width: 1050px) {
+    .header-logo img {
+        width: 400px;
+    }
     .site-title {
         padding-top: 13em;
     }
     .skew-cnt {
         margin-top: 17em;
     }
-    .title-description {
+    .header-description {
         width: 70%;
     }
+    .header-description span {
+        font-size: 1em;
+    }
     .desktop-nav .nav-list li {
-        font-size: 0.8rem;
         width: 125px;
     }
     .desktop-nav .nav-list a {
-        font-size: 0.8rem;
+        font-size: 1em;
         width: 125px;
     }
     .desktop-nav .menu-logo {
@@ -1024,20 +1113,20 @@ select[name="title-drpdwn"]:focus {
     .header-title {
         padding-top: 10vh;
     }
-    .title-logo img {
+    .header-logo img {
         width: 285px;
     }
-    .title-logo h2 {
+    .header-logo h2 {
         font-size: 1.2rem;
         margin-top: -3vh;
     }
-    .title-description {
+    .header-description {
         width: 90%;
         font-size: 0.65rem;
         flex-direction: column;
 
     }
-    .title-description span {
+    .header-description span {
         margin-top: 25px;
         font-size: 0.9rem;
     }
