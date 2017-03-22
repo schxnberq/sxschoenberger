@@ -16,7 +16,8 @@
 
     <body>
         <header class="header-home" id="header">
-                <div class="parallax-home"></div>
+                <div class="parallax-home">
+                </div>
                 <section class="header-title">
                     <div class="header-logo">
                         <h1>Stefanie Schoenberger - Fashion Designer, Artist, Creative Mind, Dressmaker
@@ -116,7 +117,7 @@
                         <form id="newsletter" class="newsletter-form" action="?" method="post">
                             <div class="radiobtn-cnt">
                                 <span>Gender:</span>
-                                <div class="radios">
+                                <div class="radiobtns">
                                     <div class="male">
                                         <label for="mr">Mr.</label>
                                         <input type="radio" id="mr" value="Mr." name="gender">
@@ -131,7 +132,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="title txtfield">
+                            <div class="form-title txtfield">
                                 <span>Title:</span>
                                 <select name="title-drpdwn" form="newsletter">
                                     <option value="choose">Choose Title:</option>
@@ -155,6 +156,17 @@
                             <div class="phone txtfield">
                                 <label for="phone">Phone number:</label>
                                 <input type="text" id="phone">
+                            </div>
+                            <div class="checkbox-cnt">
+                                <div class="news-check-cnt">
+                                    <input id="news-check" type="checkbox" value="news-check" name="check">
+                                    <label for="news-check">I want to receive daily E-Mails (standard is weekly)</label>
+                                </div>
+                                <div class="agb-check-cnt">
+                                    <input id="agb-check" type="checkbox" value="agb-check" name="check">
+                                    <label for="agb-check">I agree to the AGB</label>
+                                </div>
+
                             </div>
                             <button class="form-btn" type="submit">sign up!</button>
                         </form>

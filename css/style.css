@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     width: 100%;
     height: 90vh;
-    background: linear-gradient(to bottom, rgba(231,231,243,0.9) 0%,rgba(198,200,238,0.99) 100%);
+    background: linear-gradient(-135deg, rgba(198,200,238,0.96) 0%, rgba(231,231,243,0.96) 100%);
     font-size: 1.1rem;
 }
 
@@ -244,6 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-home {
     height: 100vh;
+    position: relative;
 }
 
 .parallax-home {
@@ -258,11 +259,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
 .header-title {
     width: 100%;
     text-align: center;
     position: fixed;
-    padding-top: 20vh;
+    padding-top: 10%;
 }
 .header-logo h1 {
     font-size: 0;
@@ -380,9 +383,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-title {
-    padding-top: 35vh;
+    margin-top: -24%;
     width: 100%;
     text-align: center;
+    position: fixed;
 }
 .site-title h2 {
     font-family: 'Arvo';
@@ -390,6 +394,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     font-size: 48px;
     text-transform: uppercase;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
 }
 
 
@@ -410,7 +415,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
     position: absolute;
-    /* z-index: 2; */
     background: white;
     width: 100%;
 }
@@ -423,7 +427,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10em;
 }
 .welcome-cnt {
-
     z-index: 3;
 }
 .welcome-title {
@@ -507,7 +510,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     margin-top: 85px;
 }
-.radios {
+.radiobtns {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -543,7 +546,20 @@ select[name="title-drpdwn"]:focus {
 .txtfield input:focus {
     outline: none;
 }
+.checkbox-cnt {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 
+.news-check-cnt, .agb-check-cnt {
+    display: flex;
+}
+.checkbox-cnt label {
+    margin-left: 15px;
+}
 .form-btn {
     width: 135px;
     margin: 0 auto;
@@ -573,7 +589,7 @@ select[name="title-drpdwn"]:focus {
     width: 100%;
     position: relative;
     background: white;
-    margin-top: 20%;
+    margin-top: 40%;
     transform: rotate(180deg);
 }
 .skew-cnt:after {
@@ -927,10 +943,10 @@ select[name="title-drpdwn"]:focus {
         width: 400px;
     }
     .site-title {
-        padding-top: 13em;
+        margin-top: -30%;
     }
     .skew-cnt {
-        margin-top: 17em;
+        margin-top: 50%;
     }
     .header-description {
         width: 70%;
@@ -1026,9 +1042,6 @@ select[name="title-drpdwn"]:focus {
 
 @media screen and (max-width: 800px) {
 
-    .skew-cnt {
-        margin-top: 15em;
-    }
     .desktop-nav {
         display: none;
     }
@@ -1045,8 +1058,11 @@ select[name="title-drpdwn"]:focus {
         flex-direction: column;
     }
     .site-title h2 {
-        font-size: 2em;
-        text-shadow: 1px 1px 6px rgba(0,0,0,0.55);
+        font-size: 2.5em;
+        margin-top: -8%;
+    }
+    .skew-cnt {
+        margin-top: 60%;
     }
 
     .radiobtn-cnt {
@@ -1145,9 +1161,11 @@ select[name="title-drpdwn"]:focus {
         line-height: 20px;
     }
 
-
+    .site-title h2 {
+        margin-top: -20%;
+    }
     .skew-cnt {
-        margin-top: 17em;
+        margin-top: 85%;
     }
 
 
