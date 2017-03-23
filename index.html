@@ -114,61 +114,64 @@
                         <div class="newsletter-title">
                             <h2>Sign up for my newsletter to stay up to date!</h2>
                         </div>
-                        <form id="newsletter" class="newsletter-form" action="?" method="post">
-                            <div class="radiobtn-cnt">
-                                <span>Gender:</span>
-                                <div class="radiobtns">
-                                    <div class="male">
-                                        <label for="mr">Mr.</label>
-                                        <input type="radio" id="mr" value="Mr." name="gender">
-                                    </div>
-                                    <div class="female">
-                                        <label for="mrs">Mrs.</label>
-                                        <input type="radio" id="mrs" value="Mrs." name="gender">
-                                    </div>
-                                    <div class="other">
-                                        <label for="other">Other</label>
-                                        <input type="radio" id="other" value="Other" name="gender">
+                        <form id="myform" action="?" method="post">
+                                <div class="radiobtn-cnt inner-form-cnt">
+                                    <span>Gender:</span>
+                                    <div class="radiobtns">
+                                        <div class="male">
+                                            <label for="mr">Mr.</label>
+                                            <input type="radio" id="mr" value="Mr." name="gender">
+                                        </div>
+                                        <div class="female">
+                                            <label for="mrs">Mrs.</label>
+                                            <input type="radio" id="mrs" value="Mrs." name="gender">
+                                        </div>
+                                        <div class="other">
+                                            <label for="other">Other</label>
+                                            <input type="radio" id="other" value="Other" name="gender">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-title txtfield">
-                                <span>Title:</span>
-                                <select name="title-drpdwn" form="newsletter">
-                                    <option value="choose">Choose Title:</option>
-                                    <option value="Dr.">Dr.</option>
-                                    <option value="Dipl. Ing.">Dipl. Ing.</option>
-                                    <option value="Mag.">Mag.</option>
-                                </select>
-                            </div>
-                            <div class="name txtfield">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name">
-                            </div>
-                            <div class="lastname txtfield">
-                                <label for="lastname">Last Name:</label>
-                                <input type="text" id="lastname">
-                            </div>
-                            <div class="mail txtfield">
-                                <label for="mail">E-Mail:</label>
-                                <input type="email" id="mail">
-                            </div>
-                            <div class="phone txtfield">
-                                <label for="phone">Phone number:</label>
-                                <input type="text" id="phone">
-                            </div>
-                            <div class="checkbox-cnt">
-                                <div class="news-check-cnt">
-                                    <input id="news-check" type="checkbox" value="news-check" name="check">
-                                    <label for="news-check">I want to receive daily E-Mails (standard is weekly)</label>
+                                <div class="form-title txtfield inner-form-cnt">
+                                    <span>Title:</span>
+                                    <select name="title-drpdwn" form="myform">
+                                        <option value="choose">Choose Title:</option>
+                                        <option value="Dr.">Dr.</option>
+                                        <option value="Dipl. Ing.">Dipl. Ing.</option>
+                                        <option value="Mag.">Mag.</option>
+                                    </select>
                                 </div>
-                                <div class="agb-check-cnt">
-                                    <input id="agb-check" type="checkbox" value="agb-check" name="check">
-                                    <label for="agb-check">I agree to the AGB</label>
+                                <div class="name txtfield inner-form-cnt">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name">
                                 </div>
+                                <div class="lastname txtfield inner-form-cnt">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" id="lastname">
+                                </div>
+                                <div class="mail txtfield inner-form-cnt">
+                                    <label for="mail">E-Mail:</label>
+                                    <input type="email" id="mail">
+                                </div>
+                                <div class="phone txtfield inner-form-cnt">
+                                    <label for="phone">Phone number:</label>
+                                    <input type="text" id="phone">
+                                </div>
+                                <div class="checkbox-cnt inner-form-cnt">
+                                    <div class="news-check-cnt">
+                                        <input id="news-check" type="checkbox" value="news-check">
+                                        <label for="news-check">I want to receive daily E-Mails (standard is weekly)</label>
+                                    </div>
+                                    <div class="agb-check-cnt inner-form-cnt">
+                                        <input id="agb-check" type="checkbox" value="agb-check">
+                                        <label for="agb-check">I agree to the AGB</label>
+                                    </div>
 
-                            </div>
-                            <button class="form-btn" type="submit">sign up!</button>
+                                </div>
+                                <button class="form-btn" type="submit">sign up!</button>
+                                <div class="error-cnt inner-form-cnt">
+
+                                </div>
                         </form>
                     </div>
                 </section>

@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /*-------------------------------------
 ------ UNIVERSAL / MENU & WRAPPER -----
 -------------------------------------*/
@@ -129,18 +130,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     width: 100%;
     height: 90vh;
-    background: linear-gradient(-135deg, rgba(198,200,238,0.96) 0%, rgba(231,231,243,0.96) 100%);
+    background: linear-gradient(to top, rgba(231,231,243,0.99) 0%,rgba(244,244,244,0.96) 100%);
     font-size: 1.1rem;
 }
 
 .nav-list-mobile li:nth-child(1) {
-    border-top: 1px #A5A8E0 solid;
+    border-top: 1px rgb(198,200,238) solid;
 }
 .nav-list-mobile li:not(.mobile-logo) {
     width: 100%;
     height: 12vh;
     line-height: 12vh;
-    border-bottom: 1px #A5A8E0 solid;
+    border-bottom: 1px rgb(198,200,238) solid;
 
 }
 .nav-list-mobile li a {
@@ -498,14 +499,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 22px;
 }
-.newsletter-form {
+#myform {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway';
 }
 .radiobtn-cnt {
-    width: 50%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-top: 85px;
@@ -528,9 +529,11 @@ select[name="title-drpdwn"] {
 select[name="title-drpdwn"]:focus {
     outline: none;
 }
+.inner-form-cnt {
+    width: 100%;
+
+}
 .txtfield {
-    width: 50%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -547,8 +550,6 @@ select[name="title-drpdwn"]:focus {
     outline: none;
 }
 .checkbox-cnt {
-    width: 50%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -559,6 +560,7 @@ select[name="title-drpdwn"]:focus {
 }
 .checkbox-cnt label {
     margin-left: 15px;
+    font-size: 0.85em;
 }
 .form-btn {
     width: 135px;
@@ -581,6 +583,9 @@ select[name="title-drpdwn"]:focus {
     transform: scale(1.05);
 }
 
+.error-cnt {
+
+}
 
 
 /* ------------ MAIN / CLOTHES ------------ */
@@ -694,16 +699,25 @@ select[name="title-drpdwn"]:focus {
 }
 
 .load-more-cnt {
-    text-align: center;
-    width: 100%;
-    margin-top: 25px;
-    padding-bottom: 50px;
-}
-.load-more-btn {
-    font-family: 'Arvo';
-    width: 150px;
+    width: 65%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.load-more-cnt span {
+    font-family: 'Arvo';
+    font-size: 2em;
+}
+
+.btn {
+    font-family: 'Arvo';
+    width: 185px;
+    margin: 0 auto;
     text-transform: uppercase;
     font-weight: 400;
     color: black;
@@ -713,12 +727,73 @@ select[name="title-drpdwn"]:focus {
     cursor: pointer;
     font-size: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all .4s ease;
+    transition: all .2s ease;
+    text-align: center;
+    text-decoration: none;
 }
-.load-more-btn:hover {
-    box-shadow: 1px 3px 6px rgba(0,0,0,0.2);
+.btn:hover {
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.btn:focus {
+    outline: none;
+}
+.btn:active {
+    outline: none;
+    transform: scale(1.05);
+}
+
+
+.slider {
+    display: none;
+}
+.slider-nav {
+    position: absolute;
+    z-index: 99;
+    left: 18%;
+    transition: all .3s ease;
+}
+.slider-nav:hover {
+    background: rgba(255,255,255,0.2);
+}
+.slider-nav:hover span {
+    opacity: 1;
+}
+.slider-nav a {
+    text-decoration: none;
+}
+.slider-nav span {
+    font-size: 2.7em;
+    color: white;
+    opacity: 0.5;
+    transition: all .2s ease;
+ }
+.slider-nav span:hover {
+    color: #83CAE3;
 
 }
+.icon-keyboard_arrow_right {
+    margin-left: 30px;
+}
+.slide-list {
+    width: 100%;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slide-item {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.slide-item img {
+    position: absolute;
+    width: 100%;
+}
+.active {
+    z-index: 90;
+}
+
 
 
 /* ------------ MAIN COLLECTION -----------
@@ -760,6 +835,7 @@ select[name="title-drpdwn"]:focus {
 }
 .footer-clothes {
     background: #FAFAFA;
+    z-index: 3;
 }
 
 .footer-cnt {
@@ -892,12 +968,7 @@ select[name="title-drpdwn"]:focus {
     .newsletter {
         font-size: 1.1em;
     }
-    .radiobtn-cnt {
-        width: 65%;
-    }
-    .txtfield {
-        width: 65%;
-    }
+
     .form-btn {
         width: 175px;
         font-size: 0.8em;
@@ -918,23 +989,7 @@ select[name="title-drpdwn"]:focus {
 
 }
 
-/*
 
-@media screen and (max-width: 1500px) {
-    .header-logo img {
-        width: 500px;
-    }
-    .header-logo h2 {
-        margin-top: -6.5vh;
-    }
-    .header-description {
-        width: 60%;
-    }
-    .header-description span {
-        font-size: 1.2rem;
-    }
-}
-*/
 
 
 
@@ -981,21 +1036,19 @@ select[name="title-drpdwn"]:focus {
     .welcome-img img {
         width: 285px;
     }
+
+    #myform {
+        width: 65%;
+    }
     .newsletter-title h2 {
         font-size: 19px;
     }
     .newsletter {
         font-size: 0.85rem;
     }
-    .radiobtn-cnt {
-        width: 65%;
-    }
-    .txtfield {
-        width: 65%;
-    }
+
     .load-more-cnt {
-        margin-top: 65px;
-        padding-bottom: 85px;
+        width: 85%;
     }
     .form-btn {
         width: 100px;
@@ -1065,16 +1118,9 @@ select[name="title-drpdwn"]:focus {
         margin-top: 60%;
     }
 
-    .radiobtn-cnt {
+    #myform {
         width: 75%;
     }
-    .radiobtn-cnt {
-        width: 80%;
-    }
-    .txtfield {
-        width: 80%;
-    }
-
 
     .colorline {
         width: 185px;
@@ -1085,6 +1131,14 @@ select[name="title-drpdwn"]:focus {
         font-size: 0.85rem;
         line-height: 21px;
         padding-top: 25px;
+    }
+
+    .load-more-cnt {
+        width: 100%;
+    }
+    .btn {
+        width: 125px;
+        font-size: 0.65em;
     }
 
 
@@ -1168,7 +1222,9 @@ select[name="title-drpdwn"]:focus {
         margin-top: 85%;
     }
 
-
+    #myform {
+        width: 100%;
+    }
     .newsletter-form {
         width: 100%;
     }
@@ -1176,14 +1232,9 @@ select[name="title-drpdwn"]:focus {
         font-size: 17px;
     }
     .newsletter {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
-    .radiobtn-cnt {
-        width: 100%;
-    }
-    .txtfield {
-        width: 100%;
-    }
+
     .newsletter-form {
         font-size: 0.7rem;
     }

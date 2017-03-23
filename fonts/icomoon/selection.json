@@ -4,6 +4,64 @@
     {
       "icon": {
         "paths": [
+          "M366 698l196-196-196-196 60-60 256 256-256 256z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "keyboard_arrow_right"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 1,
+        "prevSize": 24,
+        "code": 59650,
+        "name": "keyboard_arrow_right"
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M658 686l-60 60-256-256 256-256 60 60-196 196z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "keyboard_arrow_left"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "prevSize": 24,
+        "code": 59651,
+        "name": "keyboard_arrow_left"
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
           "M128 213.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 725.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5zM128 469.333h768q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-768q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5z"
         ],
         "attrs": [
@@ -20,13 +78,13 @@
         {}
       ],
       "properties": {
-        "order": 1,
+        "order": 21,
         "id": 0,
         "prevSize": 24,
         "code": 59649,
         "name": "menu"
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 3,
       "iconIdx": 0
     },
@@ -49,13 +107,13 @@
         {}
       ],
       "properties": {
-        "order": 1,
+        "order": 20,
         "id": 0,
         "name": "envelope-o",
         "prevSize": 28,
         "code": 59648
       },
-      "setIdx": 1,
+      "setIdx": 2,
       "setId": 2,
       "iconIdx": 0
     },
@@ -77,12 +135,12 @@
       "properties": {
         "ligatures": "location, map-marker",
         "name": "location",
-        "order": 18,
+        "order": 19,
         "id": 72,
         "prevSize": 32,
         "code": 59719
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 1,
       "iconIdx": 71
     },
@@ -111,7 +169,7 @@
         "prevSize": 32,
         "code": 60050
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 1,
       "iconIdx": 402
     },
@@ -139,7 +197,7 @@
         "prevSize": 32,
         "code": 60054
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 1,
       "iconIdx": 406
     },
@@ -168,7 +226,7 @@
         "prevSize": 32,
         "code": 60072
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 1,
       "iconIdx": 424
     }
