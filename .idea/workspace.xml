@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/clothesimgs/slideimgs/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/clothesimgs/slideimgs/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/clothesimgs/slideimgs/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/clothesimgs/slideimgs/img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/clothesimgs/slideimgs/img5.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_thmb6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_thmb6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_thmb6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/madame.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/mister.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icomoon/Read Me.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icomoon/demo-files/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icomoon/demo-files/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/icomoon/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clothes.html" afterPath="$PROJECT_DIR$/clothes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections.html" afterPath="$PROJECT_DIR$/collections.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,7 +97,7 @@
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="374">
-                  <caret line="371" column="1" lean-forward="false" selection-start-line="371" selection-start-column="1" selection-end-line="371" selection-end-column="9" />
+                  <caret line="371" column="11" lean-forward="false" selection-start-line="371" selection-start-column="10" selection-end-line="371" selection-end-column="11" />
                   <folding>
                     <marker date="1490632691000" expanded="true" signature="20183:20206" ph="{...}" />
                   </folding>
@@ -414,7 +436,7 @@
       <workItem from="1490445890195" duration="30054000" />
       <workItem from="1490560211478" duration="2207000" />
       <workItem from="1490613117429" duration="12696000" />
-      <workItem from="1490626304470" duration="5484000" />
+      <workItem from="1490626304470" duration="5684000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -598,17 +620,24 @@
       <option name="project" value="LOCAL" />
       <updated>1490561862887</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="lost count_3 -m">
+      <created>1490632873864</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1490632873864</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208404000" />
+    <option name="totallyTimeSpent" value="208604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="833" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -644,7 +673,8 @@
     <MESSAGE value="sixth -m" />
     <MESSAGE value="lost count -m" />
     <MESSAGE value="lost count_2 -m" />
-    <option name="LAST_COMMIT_MESSAGE" value="lost count_2 -m" />
+    <MESSAGE value="lost count_3 -m" />
+    <option name="LAST_COMMIT_MESSAGE" value="lost count_3 -m" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1130,7 +1160,7 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="371" column="1" lean-forward="false" selection-start-line="371" selection-start-column="1" selection-end-line="371" selection-end-column="9" />
+          <caret line="371" column="11" lean-forward="false" selection-start-line="371" selection-start-column="10" selection-end-line="371" selection-end-column="11" />
           <folding>
             <marker date="1490632691000" expanded="true" signature="20183:20206" ph="{...}" />
           </folding>
