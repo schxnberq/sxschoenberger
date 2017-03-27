@@ -415,8 +415,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #main {
-    position: absolute;
     background: white;
+    position: relative;
     width: 100%;
 }
 
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-1 {
-    margin-top: 10em;
+    padding-top: 10em;
 }
 .welcome-cnt {
     z-index: 3;
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     position: relative;
 }
-.article-item:not(.first) {
+.article-item:not(:nth-child(2)) {
     margin-top: 175px;
 }
 
@@ -802,7 +802,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     opacity: 0.5;
     transition: all .2s ease;
- }
+}
 .slider-nav span:hover {
     color: #83CAE3;
 
@@ -946,6 +946,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------- UNIVERSAL FOOTER --------------- */
 .footer {
+    background: #FAFAFA;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
 }
 .footer-clothes {
     background: #FAFAFA;
@@ -964,8 +968,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-left {
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     flex-basis: 25%;
 }
 .social-icons {
@@ -1132,10 +1136,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 115px;
     }
 
-    .welcome-content {
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
+
     .welcome-title h2 {
         font-size: 38px;
     }
@@ -1175,7 +1176,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .article-title h2 {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
     .article-txt p {
         font-size: 1rem;
@@ -1183,7 +1184,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .clothes-txt p {
         font-size: 0.8rem;
-
     }
 
     .slide-item {
@@ -1328,8 +1328,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (max-width: 650px) {
+
     .section-1 {
-        margin-top: 6em;
+        padding-top: 6em;
+    }
+    .skew-cnt-home {
+        height: 100px;
     }
     .header-title {
         padding-top: 10vh;
@@ -1388,7 +1392,7 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
 
     }
-    .article-item:not(.first) {
+    .article-item:not(:nth-child(2)) {
         margin-top: 185px;
     }
     .img-list-item {
