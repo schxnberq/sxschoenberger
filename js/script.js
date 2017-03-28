@@ -45,13 +45,15 @@
 
 
             $(document).find('span.errormsg').remove();
-            $('#myform .error').removeClass('error');
+            $(document).find('span.icon-check').remove();
 
 
 
-           var $adderrorspan = function (event) {
-               $createspan = $('<span class="errormsg"></span>');
-               event.append($createspan);
+
+
+            var $adderrorspan = function (_p) {
+                $createspan = $('<span class="errormsg"></span>');
+               _p.append($createspan);
            }
 
 
@@ -63,45 +65,58 @@
             if($radiocnt.find('input[type="radio"]:checked').length <= 0 ) {
                 /*$radiocnt.find('span').addClass('error');*/
                 $adderrorspan($radiocnt);
-                $radiocnt.find('span.errormsg').text('*Please select your gender');
+                $createspan.text('*Please select your gender');
             } else {
                 $adderrorspan($radiocnt);
                 $radiocnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
 
-            // TITLE
-            if($('.title-drpdwn option[value="choose"]:checked')) {
-                $adderrorspan($('.form-title'));
-                $('.form-title').find('span.errormsg').text('*Please select your title');
-            } else {
-                $adderrorspan($('.form-title'));
-                $('.form-title').find('span.errormsg').addClass('icon-check completeerror');
-            }
 
             
             // NAME
             var $namecnt = $('.name-cnt');
             if($('#name').val().trim() === "") {
-                /*add_error();*/
                 $adderrorspan($namecnt);
-                $namecnt.find('span.errormsg').text('*Please fill in your name');
+                $createspan.text('*Please fill in your name');
+
             } else {
                 $adderrorspan($namecnt);
                 $namecnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
 
+
             // LASTNAME
+            var validlastname = " +/0123456789!=?_.,#";
+
+
             var $lastnamecnt = $('.lastname-cnt');
-            if($('#lastname').val().trim() === "") {
-                /*add_error();*/
+            var $lastname = $('#lastname');
+
+           /* for(var i = 0; i < $lastname.val().length; i++) {
+                var z = $lastname.val().charAt(i);
+
+                if (validlastname.indexOf(z) > 0) {
+                    $adderrorspan($lastnamecnt);
+                    $createspan.text('*Please fill in a valid last name. No special characters allowed');
+                } else {
+                    $adderrorspan($lastnamecnt);
+                    $lastnamecnt.find('span.errormsg').addClass('icon-check completeerror');
+                }
+
+            }*/
+
+            if($lastname.val().trim() === "") {
                 $adderrorspan($lastnamecnt);
-                $lastnamecnt.find('span.errormsg').text('*Please fill in your name');
-            } else {
+                $createspan.text('*Please fill in your last name');
+
+            } else if ($lastname.val()) {
                 $adderrorspan($lastnamecnt);
                 $lastnamecnt.find('span.errormsg').addClass('icon-check completeerror');
             }
+
+
 
             // EMAIL
             var $mailcnt = $('.mail-cnt');
@@ -109,23 +124,41 @@
             if($email.val().trim() === "" || $email.val().indexOf('@') < 1) {
                 /*add_error();*/
                 $adderrorspan($mailcnt);
-                $mailcnt.find('span.errormsg').text('*Please fill in your name');
+                $createspan.text('*Please fill in your e-mail');
             } else {
                 $adderrorspan($mailcnt);
                 $mailcnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
+
             // PHONE
+            var validphone = " +-/0123456789";
+
             var $phonecnt = $('.phone-cnt');
             var $phone = $('#phone');
             if($phone.val().trim() === "") {
-                /*add_error();*/
                 $adderrorspan($phonecnt);
                 $createspan.text('*Please fill in your phone number');
-            } else {
-                $adderrorspan($phonecnt);
-                $phonecnt.find('span.errormsg').addClass('icon-check completeerror');
+
+            } else if ($phone.val()) {
+                for(var i = 0; i < $phone.val().length; i++) {
+
+                    var z = $phone.val().charAt(i);
+
+                    if(z === '+' && i > 0 || validphone.indexOf(z) === -1) {
+                        $adderrorspan($phonecnt);
+                        $createspan.text('*Please fill in a valid phone number with only digits and if needed, a "+" as the first character');
+                    } else {
+                        $adderrorspan($phonecnt);
+                        $phonecnt.find('span.errormsg').addClass('icon-check completeerror');
+                    }
+                }
             }
+
+
+
+
+
 
 
             // CHECKBOX
@@ -138,6 +171,9 @@
                 $adderrorspan($agbcnt);
                 $agbcnt.find('span.errormsg').addClass('icon-check completeerror');
             }
+
+
+
 
 
             _e.preventDefault();

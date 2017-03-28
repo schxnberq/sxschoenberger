@@ -531,6 +531,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .inner-form-cnt {
     width: 100%;
+    position: relative;
 
 }
 .txtfield {
@@ -538,6 +539,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
+
 }
 .txtfield input {
     width: 65%;
@@ -601,8 +603,9 @@ h1, h2, h3, h4, h5, h6 {
 .errormsg {
     position: absolute;
     font-size: 0.7em;
-    margin-top: 22px;
     color: tomato;
+    left: 0;
+    top: 28px;
 }
 .errormsg i {
     font-style: normal;
@@ -612,8 +615,8 @@ h1, h2, h3, h4, h5, h6 {
 .completeerror {
     color: green;
     font-size: 1.1em;
-    margin-left: 5px;
-    margin-top: 18px;
+    left: 0;
+    top: 20px;
 }
 
 
@@ -832,7 +835,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ------------ MAIN COLLECTION -----------
- (few extra adjustments to the articles, but mostly the same) */
+ (few extra adjustments to the articles, but mostly recycled from CLOTHES SITE) */
 
 
 .collection-gallery {
@@ -859,7 +862,6 @@ h1, h2, h3, h4, h5, h6 {
 .right .collection-p {
     right: 0;
     position: absolute;
-
 }
 
 .gallery-box {
@@ -951,7 +953,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 100%;
 }
-.footer-clothes {
+.footer-scnd {
     background: #FAFAFA;
     z-index: 3;
 }
@@ -1300,6 +1302,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .social-icons {
         margin-top: 15px;
+    }
+    .footer-scnd .icon {
+        width: 19px;
     }
     .footer-center {
         order: 3;
