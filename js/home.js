@@ -7,7 +7,6 @@
             scrollTop: $( $.attr(this, 'href') ).offset().top}, 850);
     });
 
-
     $(document).ready(function() {
         var mainPoint = $("#main").offset().top;
         $(window).scroll(function() {
@@ -18,18 +17,7 @@
             }
         });
     });
-
-    // BURGER MENU ANIMATION
-    $(document).ready(function(){
-        var $burgerico = $('#nav-icon3'); // select burger icon
-        $burgerico.click(function () { // give burger icon click event
-            $burgerico.toggleClass('open'); // toggle menu to x animation
-            $('.nav-list-mobile').slideToggle(250);
-            // toggle menu (hide and display slide down animation)
-        });
-    });
-
-
+    
 
 
 
@@ -55,6 +43,10 @@
                 $createspan = $('<span class="errormsg"></span>');
                _p.append($createspan);
            }
+           /* var $add_check = function (_z) {
+                $createcheck = $('<span class="icon-check"></span>');
+                _z.append($createcheck);
+            }*/
 
 
 
@@ -66,9 +58,6 @@
                 /*$radiocnt.find('span').addClass('error');*/
                 $adderrorspan($radiocnt);
                 $createspan.text('*Please select your gender');
-            } else {
-                $adderrorspan($radiocnt);
-                $radiocnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
 
@@ -76,44 +65,46 @@
             
             // NAME
             var $namecnt = $('.name-cnt');
-            if($('#name').val().trim() === "") {
+            var $name = $('#name');
+
+            if($name.val().trim() === "") {
                 $adderrorspan($namecnt);
                 $createspan.text('*Please fill in your name');
 
-            } else {
-                $adderrorspan($namecnt);
-                $namecnt.find('span.errormsg').addClass('icon-check completeerror');
+            }
+            for (var i = 0; i < $name.val().length; i++) {
+                var validname = " +/0123456789!§$%&/()=?_:;";
+
+                var z = $name.val().charAt(i);
+
+                if (validname.indexOf(z) > -1) {
+                    $adderrorspan($namecnt);
+                    $createspan.text('*Please fill in a valid name with only letters from A-Z');
+
+                }
             }
 
 
 
             // LASTNAME
-            var validlastname = " +/0123456789!=?_.,#";
-
 
             var $lastnamecnt = $('.lastname-cnt');
             var $lastname = $('#lastname');
-
-           /* for(var i = 0; i < $lastname.val().length; i++) {
-                var z = $lastname.val().charAt(i);
-
-                if (validlastname.indexOf(z) > 0) {
-                    $adderrorspan($lastnamecnt);
-                    $createspan.text('*Please fill in a valid last name. No special characters allowed');
-                } else {
-                    $adderrorspan($lastnamecnt);
-                    $lastnamecnt.find('span.errormsg').addClass('icon-check completeerror');
-                }
-
-            }*/
 
             if($lastname.val().trim() === "") {
                 $adderrorspan($lastnamecnt);
                 $createspan.text('*Please fill in your last name');
 
-            } else if ($lastname.val()) {
-                $adderrorspan($lastnamecnt);
-                $lastnamecnt.find('span.errormsg').addClass('icon-check completeerror');
+            }
+            for (var i = 0; i < $lastname.val().length; i++) {
+                var validlastname = " +/0123456789!§$%&/()=?_:;";
+
+                var z = $lastname.val().charAt(i);
+
+                if (validlastname.indexOf(z) > -1) {
+                    $adderrorspan($lastnamecnt);
+                    $createspan.text('*Please fill in a valid last name with only letters from A-Z');
+                }
             }
 
 
@@ -125,35 +116,35 @@
                 /*add_error();*/
                 $adderrorspan($mailcnt);
                 $createspan.text('*Please fill in your e-mail');
-            } else {
-                $adderrorspan($mailcnt);
-                $mailcnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
 
             // PHONE
-            var validphone = " +-/0123456789";
+
+
 
             var $phonecnt = $('.phone-cnt');
             var $phone = $('#phone');
+
             if($phone.val().trim() === "") {
                 $adderrorspan($phonecnt);
                 $createspan.text('*Please fill in your phone number');
 
-            } else if ($phone.val()) {
-                for(var i = 0; i < $phone.val().length; i++) {
+            }
 
-                    var z = $phone.val().charAt(i);
+            for (var i = 0; i < $phone.val().length; i++) {
+                var validphone = " +-/0123456789";
 
-                    if(z === '+' && i > 0 || validphone.indexOf(z) === -1) {
-                        $adderrorspan($phonecnt);
-                        $createspan.text('*Please fill in a valid phone number with only digits and if needed, a "+" as the first character');
-                    } else {
-                        $adderrorspan($phonecnt);
-                        $phonecnt.find('span.errormsg').addClass('icon-check completeerror');
-                    }
+                var z = $phone.val().charAt(i);
+
+                 if (validphone.indexOf(z) === -1 || z === '+' && i > 0) {
+                    $adderrorspan($phonecnt);
+                    $createspan.text('*Please fill in a valid phone number with only digits and if needed, a "+" as the first character');
+
                 }
             }
+
+
 
 
 
@@ -167,9 +158,6 @@
                 /*add_error();*/
                 $adderrorspan($agbcnt);
                 $createspan.text('*Please agree to the AGB');
-            } else {
-                $adderrorspan($agbcnt);
-                $agbcnt.find('span.errormsg').addClass('icon-check completeerror');
             }
 
 

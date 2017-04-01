@@ -16,7 +16,8 @@
     <body>
         <header class="header-clothes">
             <h1 class="visually-hidden">Stefanie Schoenberger - Fashion Designer</h1>
-            <div class="parallax clothes-hero"></div>
+                <div class="parallax clothes-hero">
+                </div>
             <section class="menu">
                 <h2 class="visually-hidden">Main Navigation</h2>
                 <nav class="main-nav desktop-nav wrapper">
@@ -133,29 +134,42 @@
                 </div>
                 <section class="slider" id="slider">
                     <div class="slider-nav">
-                        <a href="">
-                            <span class="icon-arrow_back"></span>
-                        </a>
-                        <a href="">
-                            <span class="icon-arrow_forward"></span>
-                        </a>
+                            <span class="icon-arrow_back nav-arrow"></span>
+                            <span class="icon-arrow_forward nav-arrow"></span>
                     </div>
                     <ul class="slide-list">
-                        <li class="slide-item slide1">
+                        <li class="slide-item" data-slide="0">
                             <img src="imgs/clothesimgs/slideimgs/img1.jpg" alt="">
                         </li>
-                        <li class="slide-item slide2">
+                        <li class="slide-item" data-slide="1">
                             <img src="imgs/clothesimgs/slideimgs/img2.jpg" alt="">
                         </li>
-                        <li class="slide-item slide3">
+                        <li class="slide-item" data-slide="2">
                             <img src="imgs/clothesimgs/slideimgs/img4.jpg" alt="">
                         </li>
-                        <li class="slide-item slide4">
+                        <li class="slide-item" data-slide="3">
                             <img src="imgs/clothesimgs/slideimgs/img5.jpeg" alt="">
                         </li>
                     </ul>
 
                 </section>
+
+                <!--<section class="cst-slider">
+                    <ul class="slide-cnt">
+                        <li class="slide" data-slide="slide1">
+                            <img src="imgs/clothesimgs/slideimgs/img1.jpg" alt="">
+                        </li>
+                        <li class="slide" data-slide="slide2">
+                            <img src="imgs/clothesimgs/slideimgs/img2.jpg" alt="">
+                        </li>
+                        <li class="slide" data-slide="slide3">
+                            <img src="imgs/clothesimgs/slideimgs/img4.jpg" alt="">
+                        </li>
+                        <li class="slide" data-slide="slide4">
+                            <img src="imgs/clothesimgs/slideimgs/img5.jpeg" alt="">
+                        </li>
+                    </ul>
+                </section>-->
 
             </article>
         </main>
@@ -219,6 +233,7 @@
         </footer>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/global.js"></script>
     </body>
 
 
