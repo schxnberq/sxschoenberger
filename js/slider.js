@@ -34,7 +34,7 @@
                 var data = $('.active').attr("data-slide");
 
                 data = data - 1;
-                slideIndex = data;
+
 
             });
             console.log(slideIndex);

@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="lost count_4 -m">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gallery_2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slider_2.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon/demo-files/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon/demo-files/demo.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sxschoenberger.iml" afterPath="$PROJECT_DIR$/.idea/sxschoenberger.iml" />
+    <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clothes.html" afterPath="$PROJECT_DIR$/clothes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections.html" afterPath="$PROJECT_DIR$/collections.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/demo.html" afterPath="$PROJECT_DIR$/fonts/icomoon/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/fonts/icomoon/fonts/icomoon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/selection.json" afterPath="$PROJECT_DIR$/fonts/icomoon/selection.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/icomoon/style.css" afterPath="$PROJECT_DIR$/fonts/icomoon/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gallery.js" afterPath="$PROJECT_DIR$/js/gallery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/slider.js" afterPath="$PROJECT_DIR$/js/slider.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +36,8 @@
           <file leaf-file-name="clothes.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/clothes.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="120" column="39" lean-forward="false" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+                <state relative-caret-position="796">
+                  <caret line="132" column="67" lean-forward="true" selection-start-line="132" selection-start-column="67" selection-end-line="132" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
@@ -136,8 +117,8 @@
           <file leaf-file-name="slider.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/slider.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                <state relative-caret-position="570">
+                  <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -472,7 +453,7 @@
       <workItem from="1490703598145" duration="12571000" />
       <workItem from="1490801738290" duration="6154000" />
       <workItem from="1490872810024" duration="26643000" />
-      <workItem from="1491075643924" duration="36000" />
+      <workItem from="1491075643924" duration="224000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -677,11 +658,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490704284428</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="lost count_4 -m">
+      <created>1491075689411</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1491075689411</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261728000" />
+    <option name="totallyTimeSpent" value="261916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,21 +1080,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/slider.js">
+    <entry file="file://$PROJECT_DIR$/clothes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="796">
+          <caret line="132" column="67" lean-forward="true" selection-start-line="132" selection-start-column="67" selection-end-line="132" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clothes.html">
+    <entry file="file://$PROJECT_DIR$/js/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="120" column="39" lean-forward="false" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="570">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
