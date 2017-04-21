@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 
@@ -283,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
     font-style: italic;
     color: white;
-    margin-top: -5.5vh;
+    margin-top: -4.5vh;
     font-size: 24px;
 }
 
@@ -528,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
     font-weight: 400;
     line-height: 26px;
-    max-width: 600px;
+    flex-basis: 50%;
 }
 .welcome-img {
     flex-basis: 50%;
@@ -706,7 +705,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skew-cnt {
-    height: 185px;
+    height: 200px;
     width: 100%;
     position: relative;
     background: white;
@@ -1083,67 +1082,109 @@ h1, h2, h3, h4, h5, h6 {
 -------------------------------------*/
 
 @media screen and (min-width: 1500px) {
+
+    .header-title {
+        padding-top: 15%;
+    }
     .header-logo img {
         width: 600px;
     }
     .header-logo h2 {
-        margin-top: -6.5vh;
+        margin-top: -3.5vh;
+        font-size: 2.3em;
     }
     .header-description {
         width: 60%;
+        font-size: 1.3em;
     }
     .header-description span {
         font-size: 1.6em;
         margin-top: 65px;
     }
+    .slide-arrow {
+        font-size: 3.5em;
+    }
+
+    .scroll-cnt {
+        bottom: 55px;
+    }
+    .mouse-icon {
+        transform: scale(1.7);
+    }
+
     .menu-logo {
-        width: 185px;
+        width: 200px;
     }
 
     .nav-list a {
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
     .welcome-cnt {
         margin-top: 12em;
     }
     .welcome-title h2 {
-        font-size: 2.8em;
+        font-size: 4em;
     }
     .welcome-txt {
-        max-width: 1000px;
+        flex-basis: 65%;
     }
     .welcome-txt p {
-        font-size: 1.3em;
-        line-height: 1.55em;
+        font-size: 1.55em;
+        line-height: 1.75em;
     }
     .welcome-img img {
-        width: 485px;
+        width: 80%;
     }
     .skew-cnt-home {
-        height: 175px;
+        height: 200px;
     }
     .newsletter-title h2 {
-        font-size: 1.5em;
-    }
-    .newsletter {
-        font-size: 1.1em;
+        font-size: 1.8em;
     }
 
+    .btn {
+        width: 225px;
+        padding: 25px;
+        font-size: 0.9em;
+    }
+
+    #myform {
+        font-size: 1.35em;
+    }
     .form-btn {
         width: 175px;
         font-size: 0.8em;
     }
 
+    .article-txt h2 {
+        font-size: 4em;
+    }
 
     .article-txt p {
-        font-size: 1.35em;
-        line-height: 1.5em;
+        font-size: 1.7em;
+        line-height: 1.7em;
+        padding-top: 0.7em;
     }
 
 
-    .footer span {
-        font-size: 1.1em;
+    .footer {
+        font-size: 24px;
     }
+    .footer-scnd {
+        font-size: 24px;
+    }
+    .footer-center span {
+        font-size: 20px;
+    }
+    .footer-right {
+        font-size: 24px;
+    }
+    .footer-right .icon {
+        font-size: 28px;
+        margin-right: 8px;
+    }
+
+
 
 }
 
