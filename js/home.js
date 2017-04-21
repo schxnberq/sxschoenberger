@@ -1,32 +1,107 @@
 
 (function ($, undefined) {
 
-    $(document).on('click', '.scroll-btn', function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top}, 850);
-    });
 
     $(document).ready(function() {
-        var mainPoint = $("#main").offset().top;
+
         $(window).scroll(function() {
-            if ($(window).scrollTop() >= mainPoint) {
-                $('.home-menu').fadeIn(100);
+            var mainOff = $('#main').offset().top;
+            if ($(this).scrollTop() >= mainOff) {
+                $('.home-menu').fadeIn(50);
             } else {
-                $('.home-menu').fadeOut(100);
+                $('.home-menu').fadeOut(50);
             }
+
+            $(".header-title").css("opacity", 1 - $(window).scrollTop() / 300);
+            $(".slider-nav").css("opacity", 1 - $(window).scrollTop() / 300);
+            /*console.log($(window).scrollTop() / 300)*/
         });
     });
-    
 
 
+
+
+    // ------------------------------------
+    // -------------- SLIDER --------------
+    // ------------------------------------
+
+    $(document).ready(function(){
+
+        var $herobg = $('.parallax-home');
+
+        var $slidelink = $('.slide-link');
+
+
+        $slidelink.each(function () {
+            $(this).on('mouseenter', function () {
+                $(this).prev('div').fadeIn(450);
+            });
+            $(this).on('mouseleave', function () {
+                $(this).prev('div').fadeOut(450);
+            });
+
+        })
+
+
+
+        $herobg.css('background-image', 'url(imgs/bgclothesblur.jpg)');
+        var count = 0;
+        var speed = 3500;
+        var imgurl = ['url(imgs/mistertny.jpg)', 'url(imgs/madametny.jpg)', 'url(imgs/jewelrytny.jpg)', 'url(imgs/bgclothesblur.jpg)'];
+
+
+
+
+        $('.prev-link').on('click', function () {
+            reset();
+            if (count === 1) {
+                count = imgurl.length;
+            } else {
+                count--;
+            }
+            $herobg.css('background-image', imgurl[count-1]);
+        });
+
+        $('.next-link').on('click', function() {
+            reset();
+            if (count === imgurl.length) {
+                count = 0;
+            }
+            countNext();
+        });
+
+
+        var slideInt = setInterval(countNext, speed)
+
+       
+
+        function countNext() {
+            if(count >= imgurl.length) {
+                count = 0;
+            }
+            changeSlide();
+            count++;
+            console.log(count)
+        }
+
+
+        var changeSlide = function() {
+            $herobg.css('background-image', imgurl[count]);
+        }
+        function reset() {
+            clearInterval(slideInt);
+            slideInt = setInterval(countNext, speed);
+
+        }
+
+    });
 
 
 
 
     // ------------------------------------
     // --------- FORM VALIDATION ----------
-    // --------------------------------- //
+    // ------------------------------------
     $(document).ready(function(){
 
         $('#myform').on('submit', function (_e) {
@@ -143,11 +218,6 @@
 
                 }
             }
-
-
-
-
-
 
 
 
