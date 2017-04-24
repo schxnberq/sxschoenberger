@@ -44,10 +44,10 @@
 
 
 
-        $herobg.css('background-image', 'url(imgs/bgclothesblur.jpg)');
+        $herobg.css('background-image', 'url(imgs/bgclothesblurtny.jpg)');
         var count = 0;
         var speed = 3500;
-        var imgurl = ['url(imgs/mistertny.jpg)', 'url(imgs/madametny.jpg)', 'url(imgs/jewelrytny.jpg)', 'url(imgs/bgclothesblur.jpg)'];
+        var imgurl = ['url(imgs/mistertny.jpg)', 'url(imgs/madametny.jpg)', 'url(imgs/jewelrytny.jpg)', 'url(imgs/bgclothesblurtny.jpg)'];
 
 
 
