@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/collections/collectionsheader.jpeg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_1tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_2tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_3tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_4tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_5tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/animals/animalscream_6tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/collectionsheader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_1tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_2tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_3tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_4tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_5tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/elefantos/elefantos_6tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_1tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_2tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_3tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_4tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_5tny.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/collections/fish/fish_6tny.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clothes.html" afterPath="$PROJECT_DIR$/clothes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections.html" afterPath="$PROJECT_DIR$/collections.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -262,7 +277,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clothesimgs" />
+              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,7 +460,7 @@
       <workItem from="1492687972933" duration="14802000" />
       <workItem from="1492717496833" duration="7717000" />
       <workItem from="1492779375227" duration="7302000" />
-      <workItem from="1493040036119" duration="11790000" />
+      <workItem from="1493040036119" duration="11841000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -720,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493050312180</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="more images optimized">
+      <created>1493052254663</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1493052254663</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341280000" />
+    <option name="totallyTimeSpent" value="341331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,9 +759,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -802,7 +823,8 @@
     <MESSAGE value="above the fold fix" />
     <MESSAGE value="overall fixes - fin" />
     <MESSAGE value="images optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="images optimized" />
+    <MESSAGE value="more images optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="more images optimized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
