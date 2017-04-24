@@ -248,7 +248,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .parallax-home {
-    /*background-image: url(../imgs/bgclothesblur.jpg);*/
     height: 100%;
     width: 100%;
     position: fixed;
@@ -480,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
 -----------------------------------*/
 
 .collection-hero {
-    background-image: url(../imgs/collections/collectionsheader.jpeg);
+    background-image: url(../imgs/collections/collectionsheader.jpg);
 }
 
 /* --------------------------------------
