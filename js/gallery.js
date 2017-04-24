@@ -25,7 +25,7 @@
 
                     var $gallerybox = $('<div class="gallery-box">\
 			<div class="gallery-exit">\
-			    <span class="close-icon">close</span>\
+			    <span class="exit-txt">close</span>\
 			</div>\
 			<div class="gallery-img-cnt">\
 			</div>\
@@ -36,7 +36,7 @@
 		</div>');
 
 
-                    $gallerybox.find('.close-icon').on('click', function(){
+                    $gallerybox.find('.exit-txt').on('click', function(){
                         $gallerybox.remove();
                     });
 

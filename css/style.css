@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 .mobile-logo {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .mobile-logo img {
     width: 200px;
@@ -765,7 +765,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 .colorline {
-    width: 250px;
+    width: 200px;
     height: 3px;
     background: linear-gradient(to right, #A5A8E0 0%, #C6C8EE 100%);
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
@@ -775,10 +775,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
     font-weight: 300;
     margin-left: 20px;
-    line-height: 21px;
-    font-size: 0.9rem;
+    line-height: 22px;
 }
-
+.clothes-txt p {
+    padding-top: 10px;
+    font-size: 1em;
+    line-height: 24px;
+}
 .article-txt h2 {
     font-family: 'Arvo';
     font-weight: 400;
@@ -796,9 +799,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right .article-txt p {
-    margin-right: 35px;
+    margin-right: 20px;
     margin-left: 0;
-
 }
 
 .right .colorline {
@@ -811,7 +813,7 @@ h1, h2, h3, h4, h5, h6 {
 .load-more-cnt {
     width: 65%;
     margin: 0 auto;
-    margin-top: 85px;
+    margin-top: 135px;
     margin-bottom: 85px;
     display: flex;
     align-items: center;
@@ -870,31 +872,22 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-item {
     flex-basis: calc(33.333% - 5px);
 }
-
+.gallery-item:nth-child(n+4) {
+    padding-top: 5px;
+}
 .gallery-item img {
     width: 100%;
-
+    display: block;
 }
 
 .collection-p {
     max-width: 75%;
-
 }
 .right .collection-p {
     right: 0;
     position: absolute;
 }
-.zoom-cnt {
-    display: none;
-}
-.zoom-cnt span {
-    position: absolute;
-    color: white;
-    font-size: 1.4em;
-    bottom: 13px;
-    right: 15px;
-    opacity: 0.8;
-}
+
 .gallery-box {
     position: fixed;
     height: 100vh;
@@ -914,10 +907,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 25px;
     position: absolute;
 }
-.close-icon {
-    font-size: 1.8em;
+.exit-txt {
+    font-size: 1.5em;
     cursor: pointer;
-    margin-right: 65px;
+    margin-right: 2em;
     color: white;
     font-family: 'Raleway';
     text-transform: uppercase;
@@ -952,11 +945,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 50%;
+    width: 75%;
 }
 .gallery-nav .collection-gallery .gallery-item {
-    flex-basis: 100px;
+    flex-basis: 200px;
     display: block;
+    padding-top: 0;
 }
 .gallery-nav .collection-gallery .gallery-item:not(:nth-child(1)) {
     margin-left: 15px;
@@ -1143,7 +1137,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .btn {
-        width: 225px;
+        width: 230px;
         padding: 25px;
         font-size: 0.9em;
     }
@@ -1253,19 +1247,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
-    .gallery-item {
-        flex-basis: calc(50% - 5px);
+    /*.gallery-item {
+        flex-basis: calc(33.333% - 1px);
 
-    }
+    }*/
 
     .article-title h2 {
         font-size: 1.9em;
     }
     .article-txt p {
-        font-size: 0.8em;
+        font-size: 0.85em;
+        line-height: 18px;
     }
     .clothes-txt p {
-        font-size: 0.8rem;
+        font-size: 0.85em;
+        padding-top: 0;
+        line-height: 19px;
     }
 
 
@@ -1275,8 +1272,8 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     .nav-arrow {
-        margin-top: -85vh;
-        padding: 10px;
+        /* margin-top: -50%; */
+        /* padding: 10px; */
     }
 
 
@@ -1335,7 +1332,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     .btn {
-        width: 125px;
+        width: 150px;
         font-size: 0.65em;
     }
 
@@ -1367,15 +1364,17 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
     }
     .article-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .article-txt {
         margin: auto;
-        width: 85%;
+        width: 80%;
     }
     .article-txt p {
         margin-left: 0;
         max-width: 100%;
+        font-size: 1em;
+        line-height: 20px;
     }
 
     .right .article-txt p {
@@ -1391,7 +1390,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .gallery-nav {
-        padding-top: 5px;
+        padding-top: 0;
     }
 
     .imagetitle {
@@ -1503,6 +1502,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.7rem;
     }
 
+    .article-txt h2 {
+        font-size: 1.7em;
+    }
+    .article-txt p {
+        font-size: 0.85em;
+        line-height: 18px;
+    }
+
 
     /***/
 
@@ -1517,11 +1524,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     .gallery-nav .collection-gallery {
         width: 100%;
+        flex-wrap: wrap;
     }
     .gallery-nav .collection-gallery .gallery-item {
-        flex-basis: 100px;
+        flex-basis: calc(33.33% - 5px);
         display: block;
-
     }
     .gallery-nav .collection-gallery .gallery-item:not(:nth-child(1)) {
         margin-left: 5px;
