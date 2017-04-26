@@ -647,15 +647,53 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
 }
 .radiobtn-cnt {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 85px;
+
 }
 .radiobtns {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
+}
+.radiobtns input {
+    align-self: center;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    -webkit-appearance: none;
+    position: relative;
+}
+.radiobtns input:focus {
+    ;
+}
+.radiobtns input:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    border-radius: 50%;
+    border: 2px #A5A8E0 solid;
+}
+.radiobtns input:focus:after {
+    outline: none;
+    background: none;
+}
+.radiobtns input:checked:after {
+    background: #C6C8EE;
+    outline: none;
+}
+
+.radiobtns input:focus {
+    background: tomato;
+}
+.male, .female, .other {
+    flex-basis: 33.333%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
 }
 .title-drpdwn {
     background: white;
@@ -665,40 +703,41 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway';
     width: 100px;
     padding-left: 5px;
+    margin-top: 5px;
 }
 .title-drpdwn:focus {
     outline: none;
 }
-.inner-form-cnt {
-    width: 100%;
-    position: relative;
 
-}
-.txtfield {
+.inner-form-cnt {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
     /* width: 95%; */
+    position: relative;
 }
-.txtfield input {
-    width: 65%;
+.inner-input {
+    flex-basis: 65%;
     padding: 7px;
     border: 0;
     border-bottom: 2px solid #27A5D0;
     box-shadow: none;
 }
-.txtfield input:focus {
+
+.inner-form-cnt input:focus {
     outline: none;
 }
 .checkbox-cnt {
     display: flex;
     flex-direction: column;
     margin-top: 55px;
+    position: relative;
 }
 
 .news-check-cnt, .agb-check-cnt {
     display: flex;
+    justify-content: flex-start;
 }
 .checkbox-cnt label {
     margin-left: 15px;
@@ -725,35 +764,26 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-.error {
+.errormsg {
+    font-size: 0.8em;
     color: tomato;
-}
-.error-cnt {
-    margin-top: 10px;
 }
 
-.txtfield .errormsg {
-    position: absolute;
-    font-size: 0.7em;
-    color: tomato;
+.inner-form-cnt .errormsg {
     left: 0;
-    top: 30px;
+    margin-top: 5px;
 }
-.checkbox-cnt .errormsg, .radiobtn-cnt .errormsg {
+.radiobtn-cnt .errormsg {
     position: absolute;
-    font-size: 0.7em;
-    color: tomato;
     left: 0;
-    top: 20px;
+    top: 35px;
+}
+.checkbox-cnt .errormsg {
+    position: absolute;
+    left: 0;
+    top: 50px;
 }
 
-.icon-check {
-    color: green;
-    font-size: 1.1em;
-    left: 0;
-    top: 24px;
-    position: absolute;
-}
 
 
 
@@ -1350,6 +1380,18 @@ h1, h2, h3, h4, h5, h6 {
     #myform {
         width: 75%;
     }
+    .inner-form-cnt:not(.radiobtn-cnt) {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+    }
+    .inner-form-cnt label {
+        padding-bottom: 5px;
+    }
+    .inner-input {
+        width: 100%;
+    }
+
 
     .colorline {
         width: 185px;
@@ -1521,11 +1563,15 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.9em;
     }
 
+
     .newsletter-title h2 {
         font-size: 17px;
     }
     .newsletter {
         font-size: 0.7rem;
+    }
+    .checkbox-cnt input {
+        width: 20px;
     }
 
     .article-txt h2 {
