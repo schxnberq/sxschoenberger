@@ -45,10 +45,17 @@
 
 
         $herobg.css('background-image', 'url(imgs/bgclothesblurtny.jpg)');
+        if($(window).innerWidth() <= 1024) {
+            $herobg.css('background-image', 'url(imgs/bgclothesblurtny_2.jpg)');
+        }
         var count = 0;
         var speed = 3500;
         var imgurl = ['url(imgs/mistertny.jpg)', 'url(imgs/madametny.jpg)', 'url(imgs/jewelrytny.jpg)', 'url(imgs/bgclothesblurtny.jpg)'];
 
+        if($(window).innerWidth() <= 1024) {
+            imgurl = ['url(imgs/mistertny_2.jpg)', 'url(imgs/madametny_2.jpg)', 'url(imgs/jewelrytny_2.jpg)', 'url(imgs/bgclothesblurtny_2.jpg)'];
+            console.log('huhu')
+        }
 
 
 
