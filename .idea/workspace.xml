@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/arvo/Arvo-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/arvo/Arvo-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/arvo/Arvo-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/arvo/Arvo-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-ExtraLight.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-ExtraLight.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-SemiBold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/raleway/Raleway-SemiBold.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -457,7 +443,7 @@
       <workItem from="1493149602809" duration="176000" />
       <workItem from="1493149794549" duration="586000" />
       <workItem from="1493150873928" duration="1889000" />
-      <workItem from="1493210128918" duration="12415000" />
+      <workItem from="1493210128918" duration="12422000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - HEADER fin">
       <created>1489701300207</created>
@@ -788,11 +774,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493236163334</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="local fontface update">
+      <created>1493236199560</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1493236199561</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361000000" />
+    <option name="totallyTimeSpent" value="361007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,8 +798,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10902778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -873,7 +867,8 @@
     <MESSAGE value="more images optimized - mobile slider" />
     <MESSAGE value="more images optimized - font update" />
     <MESSAGE value="more images optimized - local fontface update" />
-    <option name="LAST_COMMIT_MESSAGE" value="more images optimized - local fontface update" />
+    <MESSAGE value="local fontface update" />
+    <option name="LAST_COMMIT_MESSAGE" value="local fontface update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
