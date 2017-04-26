@@ -13,7 +13,15 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
+/*-------------------------------------
+ ---------------- FONTS ---------------
+-------------------------------------*/
 
+@font-face{
+    font-family: 'Raleway';
+    url('../fonts/railway-fontfacekit/webfonts/railway_regular/Railway-webfont.woff') format('woff'),
+    url('../fonts/railway-fontfacekit/webfonts/railway_regular/Railway-webfont.ttf') format('truetype');
+}
 
 /*-------------------------------------
  UNIVERSAL / MENU & WRAPPER & BUTTON --
