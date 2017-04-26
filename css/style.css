@@ -19,9 +19,45 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face{
     font-family: 'Raleway';
-    url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
-    url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    src: url('../fonts/raleway/Raleway-ExtraLight.woff') format('woff'),
+    url('../fonts/raleway/Raleway-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
 }
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Light.woff') format('woff'),
+    url('../fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
+    url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Medium.woff') format('woff'),
+    url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+
+@font-face{
+    font-family: 'Arvo';
+    src: url('../fonts/arvo/Arvo-Regular.woff') format('woff'),
+    url('../fonts/arvo/Arvo-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Arvo';
+    src: url('../fonts/arvo/Arvo-Bold.woff') format('woff'),
+    url('../fonts/arvo/Arvo-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+
 
 /*-------------------------------------
  UNIVERSAL / MENU & WRAPPER & BUTTON --
@@ -592,7 +628,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #E8E8E8 0%, #E7E7F3 100%);
 }
 .newsletter-cnt {
-    padding-top: 15%;
+    padding-top: 17%;
 }
 .newsletter-title {
     text-align: center;
@@ -607,6 +643,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Raleway';
 }
 .radiobtn-cnt {
@@ -642,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
-
+    /* width: 95%; */
 }
 .txtfield input {
     width: 65%;
@@ -1213,7 +1250,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 38px;
     }
     .welcome-txt {
-        font-size: 0.85rem;
+        /* font-size: 1em; */
     }
     .welcome-img {
         flex-basis: 35%;
@@ -1269,7 +1306,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .footer span {
-        font-size: 0.7rem;
+        font-size: 1em;
     }
 
     .footer-left .icon {
@@ -1279,7 +1316,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: -5px;
     }
     .footer-right .icon {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 
 }
@@ -1300,7 +1337,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .welcome-content {
         flex-direction: column;
-        margin-top: 85px;
+        margin-top: 55px;
     }
     .site-title h2 {
         font-size: 2.5em;
@@ -1424,8 +1461,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .footer-map {
         align-self: center;
-        order: 2;
-        margin-top: 7px;
+        font-size: 1em;
     }
     .footer-mail {
         margin-top: 0;
@@ -1466,11 +1502,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .welcome-title h2 {
-        font-size: 1.8rem;
+        font-size: 2em;
     }
     .welcome-txt p {
-        font-size: 0.8rem;
-        line-height: 20px;
+        font-size: 0.95em;
+        line-height: 1.5em;
     }
 
     .site-title h2 {
@@ -1482,7 +1518,7 @@ h1, h2, h3, h4, h5, h6 {
 
     #myform {
         width: 100%;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .newsletter-title h2 {
@@ -1498,6 +1534,7 @@ h1, h2, h3, h4, h5, h6 {
     .article-txt p {
         font-size: 0.85em;
         line-height: 18px;
+        padding-top: 10px;
     }
 
 
@@ -1509,10 +1546,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-    .zoom-cnt {
-        display: block;
-    }
     .gallery-nav .collection-gallery {
         width: 100%;
         flex-wrap: wrap;
