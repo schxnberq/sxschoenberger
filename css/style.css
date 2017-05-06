@@ -293,15 +293,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 .mobile-dropdown li {
-    height: 2.85em;
-    line-height: 2.85em;
+    height: 2.75em;
+    line-height: 2.75em;
     padding: 0;
     margin: 0;
     font-size: 0.8em;
 }
 .mobile-dropdown li a {
     display: block;
-    height: 2.85em;
+    height: 2.75em;
 }
 
 /* ----- BURGER ICON STYLING/ANIMATION ---- */
