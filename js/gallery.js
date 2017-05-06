@@ -4,26 +4,24 @@
 (function ($, undefined) {
 
 
-    $(document).ready(function(){
+    $(document).ready(function () {
 
 
-        var $thumbnails = $('.collection-gallery');
-        var $thmblinks = $thumbnails.find('a');
-        
-        var $opengallery = function (_e) {
+        // alle UL's selektieren
+        var $list = $('.collection-gallery');
+        // alle anchors in der UL finden und selektieren
+        var $list_links = $list.find('a');
 
-            /*$thumbnails.each(function(){
+        var $opengallery = function (_e) { // Funktion für Gallerie
 
-                var $list = $(this);
-                var $a_links = $list.find('a');
+            // geklickten acnhor ausgeben welcher die gallerie öffnet
+            console.log($(this));
 
-                $a_links.on('click', function(_e){*/
+            // normales Verhalten von anchor vermeiden
+            _e.preventDefault();
 
-
-                    _e.preventDefault();
-
-
-                    var $gallerybox = $('<div class="gallery-box">\
+            // Overlay der Gallerie erzeugen und als variable speichern
+            var $gallerybox = $('<div class="gallery-box">\
 			<div class="gallery-exit">\
 			    <span class="exit-txt">close</span>\
 			</div>\
@@ -36,97 +34,108 @@
 		</div>');
 
 
-                    $gallerybox.find('.exit-txt').on('click', function(){
-                        $gallerybox.remove();
-                    });
+            // close-button finden und click event hinzufügen
+            $gallerybox.find('.exit-txt').on('click', function () {
+                $gallerybox.remove();
+                // auf Click ganzes Overlay schließen
+
+            });
+
+            // img erzeugen für großes Bild welches als Tumbnail auf der Seite angeklickt wird
+            // $(this).attr('href') -> pfad zum Image aus dem geklickten Link auslesen
+            var $img = $('<img src="' + $(this).attr('href') + '">');
+
+            // erzeugtes img in div für großes Bild anhängen
+            $gallerybox.find('.gallery-img-cnt').append($img);
+            console.log($img); // 'aktives' Bild ausgeben (großes Bild)
+
+
+            // span mit Bildtitel erzeugen und nach großem Bild einfügen
+            // text kommt aus dem title Attribut des anchors
+            $img.after('<span class="galleryimg-title">' + $(this).attr('title') + '</span>');
+            console.log($('span.galleryimg-title') + 'span');
+
+            // Tumbnailliste aus der Webseite klonen und nach dem prev-button einfügen
+            $gallerybox.find('.icon-arrow_back').after($(this).closest('.collection-gallery').clone());
+
+
+            // anchor finden (gleiches href attribut wie großes Bild)
+            // und closest li finden (li in dem der acnhor ist) und dem li
+            // die Klasse geben
+            $gallerybox.find('.collection-gallery a[href="' + $(this).attr('href') + '"]').closest('li').addClass('selected');
 
 
 
-                    var $img = $('<img src="' + $(this).attr('href') + '">');
+            // alle anchors in Thumbnailliste im Overlay selektieren und click
+            // Event geben
+            $gallerybox.find('.collection-gallery a').on('click', function (_e) {
+
+                // normales verhalten verhindern (verhindern das Link aufgerufen wird)
+                _e.preventDefault();
 
 
-                    $gallerybox.find('.gallery-img-cnt').append($img);
+                // die klasse selected überall entfernen
+                $gallerybox.find('.collection-gallery li.selected').removeClass('selected');
+
+                // dem geklicktem thumbnail wieder die klasse selected geben
+                $(this).closest('li').addClass('selected');
 
 
+                // das href des angeklickten anchors in das src attribut des großen img
+                // einfügen
+                $gallerybox.find('.gallery-img-cnt img').attr('src', $(this).attr('href'));
 
-                    $img.after('<span class="imagetitle">' + $(this).attr('title') +'</span>');
+                // title attribut des angeklickten anchors als text in das span schreiben
+                $gallerybox.find('.gallery-img-cnt .galleryimg-title').text($(this).attr('title'));
 
-
-
-                    $gallerybox.find('.icon-arrow_back').after($(this).closest('.collection-gallery').clone());
-
-
-
-
-                    $gallerybox.find('.collection-gallery a[href="' + $(this).attr('href') + '"]').closest('li').addClass('selected');
+            });
 
 
+            // click event für next button
+            $gallerybox.find('.icon-arrow_forward').on('click', function () {
+
+                // das Thumbnail rechts vom aktuell selektiertem finden und in
+                // variable speichern
+                var $next = $gallerybox.find('.collection-gallery li.selected').next();
+
+                // wenn es rechts noch eines gibt
+                if ($next.length) {
+                    // click event auf dem nächsten anchor triggern
+                    $next.find('a').trigger('click');
+                } else {
+                    // wenn keines daneben - dann click event auf dem ersten auslösen
+                    $gallerybox.find('a').first().trigger('click');
+                }
+            });
 
 
-                    $gallerybox.find('.collection-gallery a').on('click', function(_e){
+            // click event für prev button
+            $gallerybox.find('.icon-arrow_back').on('click', function () {
+
+                // das Thumbnail links vom aktuell selektiertem finden und in
+                // variable speichern
+                var $prev = $gallerybox.find('.collection-gallery li.selected').prev();
+
+                // wenn es rechts noch eines gibt
+                if ($prev.length) {
+                    // click event auf dem vorherigen anchor triggern
+                    $prev.find('a').trigger('click');
+                } else {
+                    // wenn keines daneben - dann click event auf dem letzten auslösen
+                    $gallerybox.find('a').last().trigger('click');
+                }
+            });
 
 
-                        _e.preventDefault();
-
-
-                        $gallerybox.find('.collection-gallery li.selected').removeClass('selected');
-
-                        $(this).closest('li').addClass('selected');
-
-
-
-                        $gallerybox.find('.gallery-img-cnt img').attr('src', $(this).attr('href'));
-
-
-
-
-                        $gallerybox.find('.gallery-img-cnt .imagetitle').text($(this).attr('title'));
-
-
-                    });
-
-
-
-                    $gallerybox.find('.icon-arrow_forward').on('click', function(){
-
-                        var $next = $gallerybox.find('.collection-gallery li.selected').next();
-
-                        if($next.length) {
-
-                            $next.find('a').trigger('click');
-                        } else {
-
-                            $gallerybox.find('a').first().trigger('click');
-                        }
-                    });
-
-
-                    $gallerybox.find('.icon-arrow_back').on('click', function(){
-
-                        var $prev = $gallerybox.find('.collection-gallery li.selected').prev();
-
-                        if($prev.length) {
-
-                            $prev.find('a').trigger('click');
-                        } else {
-
-                            $gallerybox.find('a').last().trigger('click');
-                        }
-                    });
-
-
-                    $('body').prepend($gallerybox);
-
-                    $gallerybox.fadeIn();
+            //Overlay ins DOM einhängen
+            $('body').prepend($gallerybox);
+            $gallerybox.animate({opacity: 1},75);
 
         }
-        
-        $thmblinks.on('click', $opengallery);
 
 
-
-
-
+        // allen anchors in der liste ein click event geben welches die Funktion aufruft
+        $list_links.on('click', $opengallery);
 
 
     });
