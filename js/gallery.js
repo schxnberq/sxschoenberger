@@ -134,7 +134,7 @@
         }
 
 
-        // allen anchors in der liste ein click event geben welches die Funktion aufruft
+        // an allen anchors in der liste click event binden geben welches die Funktion aufruft
         $list_links.on('click', $opengallery);
 
 

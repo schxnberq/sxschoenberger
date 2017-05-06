@@ -96,7 +96,7 @@
             }
             count++; // count + 1 damit nächstes kommt
             changeSlide(); // ruft Funktion auf welche die bg-images ändert
-            console.log(count)
+            console.log(count);
         }
         var slideInt = setInterval(countNext, speed);
         // interval für autoplay funktion (countNext) setzten (speed = variable oben)
@@ -108,6 +108,7 @@
             resetInt(); // interval zurücksetzen - damit es während dem klicken nicht weiterläuft
             // wenn count = 0 (mistertny.jpg) dann wieder auf imgurl.length - 1
             // - 1 weil length = 4 aber das Bild an der Array stelle 3 ist das letzte
+
             if (count === 0) {
                 count = imgurl.length-1;
             } else if (count === imgurl.length) {
@@ -117,10 +118,13 @@
                 count = imgurl.length-2;
             } else {
                 count--;
-                // wenn keine bedingung zutrifft, count = count - 1 und image mit neuem count setzten
+                // wenn keine bedingung zutrifft, count = count - 1 und bg-image mit neuem count setzen
             }
             $herobg.css('background-image', imgurl[count]);
+
             console.log('prev-btn clicked');
+            console.log('interval cleared');
+            console.log('current image: ' + imgurl[count]);
         });
 
         // Click event auf next Button
@@ -131,7 +135,10 @@
                 count = -1; // DANN count = -1 weil countNext() wieder aufgerufen wird und dort count++ gesetzt ist d.h count wird auf 0 gesetzt
             }
             countNext();
+
             console.log('next-btn clicked');
+            console.log('interval cleared');
+            console.log('current image: ' + imgurl[count]);
         });
 
 
