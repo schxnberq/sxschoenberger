@@ -804,7 +804,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px #A5A8E0 solid;
     border-radius: 100%;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1508,7 +1508,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .inner-form-cnt .errormsg,
     .inner-form-cnt .default-error {
-        top: 4em;
+        top: 4.2em;
     }
 
 

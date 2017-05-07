@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="568d5f80-de6a-4fdd-bc68-6c2d69fbb5af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clothes.html" afterPath="$PROJECT_DIR$/clothes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections.html" afterPath="$PROJECT_DIR$/collections.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/home.js" afterPath="$PROJECT_DIR$/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mobile_menu.js" afterPath="$PROJECT_DIR$/js/mobile_menu.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +67,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="790" column="23" lean-forward="true" selection-start-line="790" selection-start-column="23" selection-end-line="790" selection-end-column="23" />
+                <state relative-caret-position="371">
+                  <caret line="1511" column="5" lean-forward="true" selection-start-line="1511" selection-start-column="5" selection-end-line="1511" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -488,14 +483,7 @@
       <workItem from="1493998643690" duration="28872000" />
       <workItem from="1494076553744" duration="5080000" />
       <workItem from="1494087554628" duration="1454000" />
-      <workItem from="1494167099955" duration="611000" />
-    </task>
-    <task id="LOCAL-00006" summary="frth commit - responsive adj.">
-      <created>1490131326065</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1490131326065</updated>
+      <workItem from="1494167099955" duration="769000" />
     </task>
     <task id="LOCAL-00007" summary="frth commit - responsive adj.">
       <created>1490131427079</created>
@@ -833,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494087568214</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="input fix">
+      <created>1494182130674</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1494182130675</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455015000" />
+    <option name="totallyTimeSpent" value="455173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -922,7 +917,8 @@
     <MESSAGE value="local fontface update" />
     <MESSAGE value="local fontface update - radiobtns styles" />
     <MESSAGE value="last updates - dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="last updates - dropdown" />
+    <MESSAGE value="input fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="input fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1201,8 +1197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="790" column="23" lean-forward="true" selection-start-line="790" selection-start-column="23" selection-end-line="790" selection-end-column="23" />
+        <state relative-caret-position="371">
+          <caret line="1511" column="5" lean-forward="true" selection-start-line="1511" selection-start-column="5" selection-end-line="1511" selection-end-column="5" />
           <folding />
         </state>
       </provider>
