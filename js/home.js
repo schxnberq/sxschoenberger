@@ -105,9 +105,10 @@
 
         // Click event auf previous Button
         $('.prev-link').on('click', function () {
-            resetInt(); // interval zurücksetzen - damit es während dem klicken nicht weiterläuft
+            // interval zurücksetzen - damit es während dem klicken nicht weiterläuft
             // wenn count = 0 (mistertny.jpg) dann wieder auf imgurl.length - 1
             // - 1 weil length = 4 aber das Bild an der Array stelle 3 ist das letzte
+            resetInt();
 
             if (count === 0) {
                 count = imgurl.length-1;
@@ -130,10 +131,17 @@
         // Click event auf next Button
         $('.next-link').on('click', function () {
             resetInt(); // gleich wie bei prev Button = interval zurücksetzen
+
+            // wenn count = 3 (length = 4,also wieder - 1) d.h auf letztem Bild
             if (count === imgurl.length-1) {
-                // wenn count = 3 (length = 4,also wieder - 1) d.h auf letztem Bild
-                count = -1; // DANN count = -1 weil countNext() wieder aufgerufen wird und dort count++ gesetzt ist d.h count wird auf 0 gesetzt
+                // DANN count = -1 weil countNext() wieder aufgerufen
+                // wird und dort count++ gesetzt ist d.h count wird auf 0 gesetzt
+                count = -1;
             }
+
+            // Aufruf der Autoplay funktion
+            // next-btn ist quasi 'erzwungene' autoplay funktion bzw. sofortiges
+            // weiterschalten des bg-images
             countNext();
 
             console.log('next-btn clicked');
@@ -266,7 +274,6 @@
 
 
             // EMAIL
-
             var $mailcnt = $('.mail-cnt'); // Container selektieren
             var $mail = $('#mail') // zugehörigen input selektieren
 

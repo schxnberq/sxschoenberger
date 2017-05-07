@@ -31,7 +31,7 @@
             // das sich das ganze Dropdown menu in der height der
             // collections li ausgeht
             // also: height der collections li ($li_height) + height vom Dropdown
-            // menu ($dropdown_height) + 10 für 'padding' bzw. damit das dropdown nicht ganz unten hängt
+            // menu ($dropdown_height) + 10 als 'padding' bzw. damit das dropdown nicht ganz unten hängt
             $(this).animate({
                 height: $li_height + $dropdown_height + 10
             });

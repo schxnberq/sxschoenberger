@@ -788,6 +788,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .radiobtns input {
     -webkit-appearance: none;
+    visibility: hidden;
 }
 
 .radiobtns label {
@@ -999,7 +1000,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
 }
 
-.article-txt h2 {
+.article-title h3 {
     font-family: 'Arvo';
     font-weight: 400;
     text-transform: uppercase;
@@ -1349,7 +1350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     /* CLOTHES & COLLECTION CONTENT */
-    .article-txt h2 {
+    .article-title h3 {
         font-size: 4em;
     }
     .article-txt p {
@@ -1441,7 +1442,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     /* CLOTHES & COLLECTION CONTENT + GALLERY */
-    .article-title h2 {
+    .article-title h3 {
         font-size: 1.9em;
     }
     .article-txt p {
@@ -1519,7 +1520,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 15px;
         position: relative;
     }
-    .article-title h2 {
+    .article-title h3 {
         font-size: 2em;
     }
     .article-txt {
@@ -1693,7 +1694,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 1em;
         font-size: 2em;
     }
-    .article-txt h2 {
+    .article-title h3 {
         font-size: 1.5em;
     }
     .article-txt p {
