@@ -1508,7 +1508,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .inner-form-cnt .errormsg,
     .inner-form-cnt .default-error {
-        top: 4.2em;
+        top: 4.25em;
     }
 
 
@@ -1685,7 +1685,10 @@ h1, h2, h3, h4, h5, h6 {
         top: 55%;
     }
     .radiobtn-cnt .errormsg {
-        top: 5.5em;
+        top: 5.7em;
+    }
+    .checkbox-cnt .errormsg {
+
     }
 
 
