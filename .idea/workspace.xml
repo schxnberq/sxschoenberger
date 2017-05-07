@@ -23,8 +23,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2436">
-                  <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+                <state relative-caret-position="267">
+                  <caret line="211" column="68" lean-forward="false" selection-start-line="211" selection-start-column="68" selection-end-line="211" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
@@ -67,8 +67,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="1687" column="16" lean-forward="false" selection-start-line="1687" selection-start-column="16" selection-end-line="1687" selection-end-column="16" />
+                <state relative-caret-position="377">
+                  <caret line="1683" column="0" lean-forward="true" selection-start-line="1683" selection-start-column="0" selection-end-line="1683" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -77,7 +77,7 @@
           <file leaf-file-name="mobile_menu.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/mobile_menu.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
+                <state relative-caret-position="495">
                   <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
                   <folding />
                 </state>
@@ -87,8 +87,8 @@
           <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4932">
-                  <caret line="275" column="20" lean-forward="false" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="20" />
+                <state relative-caret-position="289">
+                  <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
                   <folding />
                 </state>
               </provider>
@@ -180,10 +180,10 @@
         <option value="$PROJECT_DIR$/error404.html" />
         <option value="$PROJECT_DIR$/js/gallery.js" />
         <option value="$PROJECT_DIR$/js/mobile_menu.js" />
-        <option value="$PROJECT_DIR$/js/home.js" />
         <option value="$PROJECT_DIR$/collections.html" />
         <option value="$PROJECT_DIR$/clothes.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/home.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -483,14 +483,7 @@
       <workItem from="1493998643690" duration="28872000" />
       <workItem from="1494076553744" duration="5080000" />
       <workItem from="1494087554628" duration="1454000" />
-      <workItem from="1494167099955" duration="1096000" />
-    </task>
-    <task id="LOCAL-00009" summary="sixth -m">
-      <created>1490133783585</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1490133783585</updated>
+      <workItem from="1494167099955" duration="1965000" />
     </task>
     <task id="LOCAL-00010" summary="sixth -m">
       <created>1490133920137</created>
@@ -828,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494182511611</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="input fix">
+      <created>1494182609336</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1494182609336</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455500000" />
+    <option name="totallyTimeSpent" value="456369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1140,14 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mobile_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1179,26 +1171,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/mobile_menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2436">
-          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="495">
+          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4932">
-          <caret line="275" column="20" lean-forward="false" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="211" column="68" lean-forward="false" selection-start-line="211" selection-start-column="68" selection-end-line="211" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="1687" column="16" lean-forward="false" selection-start-line="1687" selection-start-column="16" selection-end-line="1687" selection-end-column="16" />
+        <state relative-caret-position="377">
+          <caret line="1683" column="0" lean-forward="true" selection-start-line="1683" selection-start-column="0" selection-end-line="1683" selection-end-column="0" />
           <folding />
         </state>
       </provider>
