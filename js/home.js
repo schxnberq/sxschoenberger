@@ -188,6 +188,23 @@
                 event.append($createspan);
             }
 
+            // Funktion für click event auf Text-Inputs
+            // bei click (eigentlich WENN input :focused ist) ->
+            // Fehlermeldung mit visibility: hidden; ausblenden
+            // falls user wieder aus Input rausklickt -> Fehlermeldung wieder
+            // einblenden
+            // event -> container des jeweiligen Inputs wird als Parameter übergeben
+            // und von dem übergebenen Container ausgehend das Input selektiert und
+            // überprüft
+            var $input_focus = function (event) {
+                event.find('input').on('focus', function () {
+                    event.find('span.errormsg, span.default-error').css('visibility', 'hidden');
+                });
+                event.find('input').on('focusout', function () {
+                    event.find('span.errormsg, span.default-error').css('visibility', 'visible');
+                });
+            }
+
 
             //  RADIO BUTTONS
             var $radiocnt = $('.radiobtn-cnt'); // Container selektieren
@@ -207,6 +224,11 @@
             var $namecnt = $('.name-cnt'); // Container selektieren
             var $name = $('#name'); // zugehörigen input selektieren
 
+            // Funktion welche input:focus überprüft wird aufgerufen und der
+            // Container des zugehörigen Inputs als Parameter übergeben
+            $input_focus($namecnt);
+
+
             // wenn input leer ist dann Fehlermeldung
             // (Leerzeichen mit trim() entfernen)
             if ($name.val().trim() === "") {
@@ -216,7 +238,7 @@
 
             // variable mit 'nicht erlaubten' Zeichen als String
             // für NAME & LASTNAME !
-            var notallowed = "+/0123456789!§$%&/()=?_:;";
+            var notallowed = "+/0123456789!@§$%&/()=?_:;";
 
             for (var i = 0; i < $name.val().length; i++) {
 
@@ -245,6 +267,10 @@
 
             var $lastnamecnt = $('.lastname-cnt'); // Container selektieren
             var $lastname = $('#lastname'); // zugehörigen input selektieren
+
+            // Funktion welche input:focus überprüft wird aufgerufen und der
+            // Container des zugehörigen Inputs als Parameter übergeben
+            $input_focus($lastnamecnt);
 
             // wenn input leer ist dann Fehlermeldung
             // (Leerzeichen mit trim() entfernen)
@@ -277,6 +303,10 @@
             var $mailcnt = $('.mail-cnt'); // Container selektieren
             var $mail = $('#mail') // zugehörigen input selektieren
 
+            // Funktion welche input:focus überprüft wird aufgerufen und der
+            // Container des zugehörigen Inputs als Parameter übergeben
+            $input_focus($mailcnt);
+
             // wenn input leer ist dann Fehlermeldung
             // (Leerzeichen mit trim() entfernen)
             if ($mail.val().trim() === "") {
@@ -303,6 +333,10 @@
             // PHONE
             var $phonecnt = $('.phone-cnt'); // Container selektieren
             var $phone = $('#phone'); // zugehörigen input selektieren
+
+            // Funktion welche input:focus überprüft wird aufgerufen und der
+            // Container des zugehörigen Inputs als Parameter übergeben
+            $input_focus($phonecnt);
 
             // wenn input leer ist dann Fehlermeldung
             // (Leerzeichen mit trim() entfernen)

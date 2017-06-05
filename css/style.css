@@ -1502,6 +1502,7 @@ h1, h2, h3, h4, h5, h6 {
     .inner-form-cnt:not(.radiobtn-cnt) {
         flex-flow: column nowrap;
         align-items: flex-start;
+        margin-top: 3.15em;
     }
     .inner-txtinput {
         width: 100%;
@@ -1678,6 +1679,7 @@ h1, h2, h3, h4, h5, h6 {
     .newsletter {
         font-size: 0.7rem;
     }
+
     .radiobtns label {
         padding: 0.8em 1.2em 2.5em 1.2em;
     }
